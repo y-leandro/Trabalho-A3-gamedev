@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://cqb1twp436bhj"]
+
+[ext_resource type="PackedScene" uid="uid://b7ghunxqy8hs6" path="res://scn/player.tscn" id="1_yufry"]
+[ext_resource type="Texture2D" uid="uid://2p5rym7q01qp" path="res://ast/asfalto.png" id="2_a1hgk"]
+[ext_resource type="PackedScene" uid="uid://bpcvupgae0lec" path="res://obj/placapare1.gltf" id="3_u6fpa"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ctnjc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wafgm"]
+albedo_texture = ExtResource("2_a1hgk")
+uv1_scale = Vector3(2.13, 2.13, 2.13)
+uv1_triplanar = true
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_6k3cy"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="Environment" id="Environment_37vwl"]
+background_mode = 1
+background_color = Color(0.0350491, 0.0724851, 0.109033, 1)
+
+[node name="mundo" type="Node3D"]
+
+[node name="player" parent="." instance=ExtResource("1_yufry")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.432433, 1.60938)
+
+[node name="Camera3D" type="Camera3D" parent="player"]
+transform = Transform3D(1, 0, 0, 0, 0.970511, 0.241058, 0, -0.241058, 0.970511, 0, 2.21909, 5.15178)
+current = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("PlaneMesh_ctnjc")
+surface_material_override/0 = SubResource("StandardMaterial3D_wafgm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_6k3cy")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_37vwl")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.72351, 0.690314, 0, -0.690314, 0.72351, 0, 2.94145, 4.67277)
+light_color = Color(0.425668, 0.533439, 0.578021, 1)
+shadow_enabled = true
+shadow_blur = 2.429
+
+[node name="blockbench_export" parent="." instance=ExtResource("3_u6fpa")]
+transform = Transform3D(-4.7164, 0, -1.65998, 0, 5, 0, 1.65998, 0, -4.7164, -3.40154, 0, -0.895169)
