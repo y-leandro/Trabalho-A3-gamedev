@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://oeqxljiiebdv"]
+
+[ext_resource type="PackedScene" uid="uid://b7ghunxqy8hs6" path="res://scn/player.tscn" id="1_fu4w7"]
+[ext_resource type="PackedScene" uid="uid://dmwbiy1twyjiv" path="res://scn/lobisomem.tscn" id="1_m2uq0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mgd1y"]
+size = Vector3(1.9502, 1, 1.9751)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_y8rbl"]
+
+[node name="TesteLobisomemIa" type="Node3D"]
+
+[node name="Lobisomem" parent="." node_paths=PackedStringArray("player") instance=ExtResource("1_m2uq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.38593, 1.45279, -1.56858)
+player = NodePath("../player")
+
+[node name="player" parent="." instance=ExtResource("1_fu4w7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0778685, 0, -0.0425396)
+
+[node name="Camera3D" type="Camera3D" parent="player"]
+transform = Transform3D(1, 0, 0, 0, 0.983261, 0.182201, 0, -0.182201, 0.983261, 0, 1.74474, 2.40123)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.49012e-08)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(51.3009, 0, 0, 0, 1, 0, 0, 0, 51.7228, 0.877, -0.5, 0.24)
+shape = SubResource("BoxShape3D_mgd1y")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(51.3017, 0, 0, 0, 1, 0, 0, 0, 51.7235, 0, 0, 0)
+mesh = SubResource("PlaneMesh_y8rbl")
+skeleton = NodePath("../..")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.317498, 0.665313, -0.675687, 0.167497, 0.662004, 0.730545, 0.933349, -0.345122, 0.098747, 0, 0, 0)
+shadow_enabled = true
