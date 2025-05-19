@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmwbiy1twyjiv"]
+
+[ext_resource type="Script" path="res://scr/lobisomem.gd" id="1_1it6c"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ot5e0"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_e2457"]
+
+[node name="Lobisomem" type="CharacterBody3D"]
+script = ExtResource("1_1it6c")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_ot5e0")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_e2457")
