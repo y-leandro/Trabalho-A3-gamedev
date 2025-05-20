@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2ky3d1ylwrol"]
+
+[ext_resource type="Script" path="res://scr/auto_fixed_camera.gd" id="1_e2tlj"]
+
+[node name="AutoFixedCamera" type="Node3D"]
+script = ExtResource("1_e2tlj")

@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=3 uid="uid://ctyxwqmvm7g2v"]
+
+[ext_resource type="PackedScene" uid="uid://b7ghunxqy8hs6" path="res://scn/player.tscn" id="1_py80b"]
+[ext_resource type="PackedScene" uid="uid://c2ky3d1ylwrol" path="res://scn/auto_fixed_camera.tscn" id="1_ufm47"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mjxew"]
+size = Vector3(4.27039, 3.245, 4.68091)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_fksy4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_btss7"]
+
+[node name="TesteAutoFixedCamera" type="Node3D"]
+
+[node name="AutoFixedCamera" parent="." instance=ExtResource("1_ufm47")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.3998)
+ashely_look_at_me = true
+
+[node name="Camera3D" type="Camera3D" parent="AutoFixedCamera"]
+transform = Transform3D(-0.0269363, -0.36793, 0.929463, -0.0106583, 0.929854, 0.367775, -0.99958, 0, -0.0289684, 2.46916, 2.14647, 0)
+current = true
+
+[node name="Area3D" type="Area3D" parent="AutoFixedCamera"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AutoFixedCamera/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.63519, 1.1225, 0.39563)
+shape = SubResource("BoxShape3D_mjxew")
+
+[node name="AutoFixedCamera2" parent="." instance=ExtResource("1_ufm47")]
+
+[node name="Camera3D" type="Camera3D" parent="AutoFixedCamera2"]
+transform = Transform3D(-0.0269363, -0.36793, 0.929463, -0.0106583, 0.929854, 0.367775, -0.99958, 0, -0.0289684, 3.18642, 2.50388, 0)
+current = true
+
+[node name="Area3D" type="Area3D" parent="AutoFixedCamera2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AutoFixedCamera2/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.63519, 1.1225, 0.39563)
+shape = SubResource("BoxShape3D_mjxew")
+
+[node name="player" parent="." instance=ExtResource("1_py80b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.22832)
+
+[node name="Camera3D" type="Camera3D" parent="player"]
+transform = Transform3D(1, 0, 0, 0, 0.996134, 0.0878512, 0, -0.0878512, 0.996134, 0, 1.66713, 3.24826)
+current = true
+
+[node name="chao" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="chao"]
+transform = Transform3D(23.1293, 0, 0, 0, 1, 0, 0, 0, 18.4093, 0, 0, 0)
+mesh = SubResource("PlaneMesh_fksy4")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="chao"]
+transform = Transform3D(61.0355, 0, 0, 0, 1, 0, 0, 0, 86.5283, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_btss7")
