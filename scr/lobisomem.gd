@@ -6,6 +6,8 @@ const WALKING_SPEED = 50.0
 const RUNNING_SPEED = 225.0
 const JUMP_VELOCITY = 4.5
 
+const hit = 2
+
 enum States {
 	idle,
 	chase
@@ -78,6 +80,7 @@ func _physics_process(delta: float) -> void:
 			var p_pos = Vector2(player.global_position.x, player.global_position.z)
 			if l_pos.distance_to(p_pos) < 1.5:
 				# todo: ataque lobisomi
+				player.hitfunc(hit)
 				pass
 			
 			var run_dir = l_pos.direction_to(p_pos).normalized()

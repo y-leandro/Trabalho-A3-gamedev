@@ -4,6 +4,8 @@ extends CharacterBody3D
 const SPEED = 3.0
 const JUMP_VELOCITY = 4.5
 
+var lp = 5
+
 @onready var model = $model
 @onready var anim = $anim
 
@@ -33,5 +35,12 @@ func _physics_process(delta: float) -> void:
 		anim.play("walk")
 	else:
 		anim.play("idle")
-
+		
+		
+	if lp < 0:
+		velocity.y = JUMP_VELOCITY
+		
 	move_and_slide()
+
+func hitfunc(hit):
+	lp -= hit
