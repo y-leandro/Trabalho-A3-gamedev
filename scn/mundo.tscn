@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cqb1twp436bhj"]
 
 [ext_resource type="PackedScene" uid="uid://b7ghunxqy8hs6" path="res://scn/player.tscn" id="1_yufry"]
-[ext_resource type="PackedScene" uid="uid://cniekf3f527kq" path="res://scn/mapa_1.tscn" id="3_ctbvs"]
+[ext_resource type="PackedScene" uid="uid://b54whow5jf4ob" path="res://scn/mapa_1.tscn" id="3_ctbvs"]
 [ext_resource type="PackedScene" uid="uid://bpcvupgae0lec" path="res://obj/placapare1.gltf" id="3_u6fpa"]
 [ext_resource type="PackedScene" uid="uid://dmwbiy1twyjiv" path="res://scn/lobisomem.tscn" id="4_8pi2m"]
 

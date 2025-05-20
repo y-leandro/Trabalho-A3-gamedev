@@ -14,3 +14,5 @@ shape = SubResource("CapsuleShape3D_ot5e0")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_e2457")
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
