@@ -32,6 +32,8 @@ var state = States.idle
 var idle_state = IdleStates.walking
 var chase_state = ChaseState.running
 
+var last_saw_player_pos = Vector3()
+
 func _ready() -> void:
 	assert(player != null, "lobo pidão pede pelo node do player")
 
@@ -44,7 +46,12 @@ func _physics_process(delta: float) -> void:
 	## Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-#
+#	
+	$RayCast3D.target_position = player.global_position - global_position + Vector3(0, 0.5,0 )
+	if $RayCast3D.get_collider() != null:
+		if $RayCast3D.get_collider().name == "player":
+			last_saw_player_pos = $RayCast3D.get_collider().global_position
+	
 	## Handle jump.
 	#if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		#velocity.y = JUMP_VELOCITY
@@ -83,7 +90,7 @@ func _physics_process(delta: float) -> void:
 	if state == States.chase:
 		if chase_state == ChaseState.running:
 			var l_pos = Vector2(global_position.x, global_position.z)
-			var p_pos = Vector2(player.global_position.x, player.global_position.z)
+			var p_pos = Vector2(last_saw_player_pos.x, last_saw_player_pos.z)
 			if l_pos.distance_to(p_pos) < 1.5:
 				# todo: ataque lobisomi
 				player.hitfunc(hit)

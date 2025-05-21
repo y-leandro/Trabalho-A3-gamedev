@@ -1,9 +1,110 @@
-[gd_scene format=3 uid="uid://bqhbu0pdyhsn0"]
+[gd_scene load_steps=12 format=3 uid="uid://bqhbu0pdyhsn0"]
 
-[node name="Celular" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[ext_resource type="Script" path="res://hud/hud_celular.gd" id="1_edbuc"]
+[ext_resource type="Texture2D" uid="uid://2yii1y28aoky" path="res://assets temporários/iphone de botão.png" id="1_ldujx"]
+[ext_resource type="Texture2D" uid="uid://ldeh2x8xljut" path="res://assets temporários/zapzap.png" id="2_4qp7i"]
+[ext_resource type="Texture2D" uid="uid://cuexmj6x6g3v6" path="res://assets temporários/caixa_selecao.png" id="3_b014r"]
+[ext_resource type="Texture2D" uid="uid://c6w07sweqjs3w" path="res://assets temporários/gps png falso.png" id="3_fub1x"]
+[ext_resource type="Texture2D" uid="uid://bne0i0lhjc4c8" path="res://assets temporários/desligar.png" id="4_wjijt"]
+[ext_resource type="Texture2D" uid="uid://dulaggwuyoi2n" path="res://assets temporários/sinal.png" id="5_gfr4w"]
+[ext_resource type="Texture2D" uid="uid://chj3rtgppjrdo" path="res://icon.svg" id="8_1fckn"]
+[ext_resource type="Texture2D" uid="uid://dx6bmrlnhj3iq" path="res://assets temporários/mapa 1(1).png" id="8_qxxb8"]
+
+[sub_resource type="GDScript" id="GDScript_jxvfn"]
+resource_name = "Interface_GPS"
+script/source = "extends Node2D
+
+func setup():
+	pass
+
+func _ready():
+	set_process(false)
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed(\"z\"):
+		self.hide()
+		$\"../MenuPrincipal\".show()
+		$\"..\".is_active = true
+		set_process(false)
+"
+
+[sub_resource type="GDScript" id="GDScript_5i2fe"]
+resource_name = "Interface_sair"
+script/source = "extends Node2D
+
+signal exiting # Informar ao jogador que ele está saindo do menu do celular
+
+func setup():
+	emit_signal(\"exiting\")
+	$\"..\".hide()
+"
+
+[node name="Celular-HUD" type="Node2D"]
+script = ExtResource("1_edbuc")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 577.0
+offset_bottom = 478.0
+texture = ExtResource("1_ldujx")
+
+[node name="MenuPrincipal" type="Node2D" parent="."]
+
+[node name="messenger" type="Sprite2D" parent="MenuPrincipal"]
+process_mode = 3
+position = Vector2(235, 206)
+scale = Vector2(0.102011, 0.0933908)
+texture = ExtResource("2_4qp7i")
+
+[node name="gps" type="Sprite2D" parent="MenuPrincipal"]
+position = Vector2(290, 208)
+scale = Vector2(0.179167, 0.113889)
+texture = ExtResource("3_fub1x")
+
+[node name="sinal" type="Sprite2D" parent="MenuPrincipal"]
+position = Vector2(347, 206)
+scale = Vector2(0.154444, 0.17)
+texture = ExtResource("5_gfr4w")
+
+[node name="sair" type="Sprite2D" parent="MenuPrincipal"]
+position = Vector2(289, 363)
+scale = Vector2(0.114942, 0.124286)
+texture = ExtResource("4_wjijt")
+
+[node name="seletor" type="Sprite2D" parent="MenuPrincipal"]
+texture = ExtResource("3_b014r")
+
+[node name="GPS" type="Node2D" parent="."]
+script = SubResource("GDScript_jxvfn")
+
+[node name="Icon" type="Sprite2D" parent="GPS"]
+clip_children = 1
+position = Vector2(290, 239.5)
+scale = Vector2(1.39063, 2.50781)
+texture = ExtResource("8_1fckn")
+
+[node name="mapa1exemplo" type="Sprite2D" parent="GPS/Icon"]
+position = Vector2(-2.87641, 2.39252)
+scale = Vector2(0.0831461, 0.103115)
+texture = ExtResource("8_qxxb8")
+
+[node name="Zap" type="Node2D" parent="."]
+visible = false
+
+[node name="Zapzap" type="Sprite2D" parent="Zap"]
+position = Vector2(290, 232)
+texture = ExtResource("2_4qp7i")
+
+[node name="Sinal" type="Node2D" parent="."]
+visible = false
+
+[node name="SinalImagem" type="Sprite2D" parent="Sinal"]
+position = Vector2(290, 236)
+scale = Vector2(0.758889, 0.747778)
+texture = ExtResource("5_gfr4w")
+
+[node name="Sair" type="Node2D" parent="."]
+visible = false
+script = SubResource("GDScript_5i2fe")

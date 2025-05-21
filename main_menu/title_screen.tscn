@@ -1,0 +1,138 @@
+[gd_scene load_steps=16 format=3 uid="uid://cbn81583pptaj"]
+
+[ext_resource type="Texture2D" uid="uid://bm2eb1m2xrnd1" path="res://background.png" id="1_87csc"]
+[ext_resource type="Script" path="res://main_menu/main_menu.gd" id="1_iqvgf"]
+[ext_resource type="FontFile" uid="uid://dtcmcn6718dsi" path="res://InknutAntiqua-Regular.ttf" id="2_m0qll"]
+[ext_resource type="FontFile" uid="uid://bvy1ofx8ym67b" path="res://font4/InknutAntiqua-ExtraBold.ttf" id="2_tao3s"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_32tcc"]
+bg_color = Color(1, 0.747851, 0.607026, 0)
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hnxa2"]
+
+[sub_resource type="Theme" id="Theme_6uaqo"]
+default_font = ExtResource("2_m0qll")
+Button/colors/font_color = Color(0.560784, 0.501961, 0.2, 1)
+Button/font_sizes/font_size = 20
+Button/fonts/font = ExtResource("2_tao3s")
+Button/styles/hover = null
+Button/styles/normal = SubResource("StyleBoxFlat_32tcc")
+Button/styles/pressed = SubResource("StyleBoxFlat_hnxa2")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5fbra"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ajx1"]
+bg_color = Color(0, 0.0185, 0.03, 0.827451)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.392157, 0.356863, 0.145098, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pvyl4"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="Theme" id="Theme_nh780"]
+default_font = ExtResource("2_m0qll")
+Button/colors/font_color = Color(0.560784, 0.501961, 0.2, 1)
+Button/font_sizes/font_size = 19
+Button/fonts/font = ExtResource("2_tao3s")
+Button/styles/normal = SubResource("StyleBoxFlat_pvyl4")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_onc2o"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="Theme" id="Theme_b2gv1"]
+default_font = ExtResource("2_m0qll")
+Button/colors/font_color = Color(0.560784, 0.501961, 0.2, 1)
+Button/font_sizes/font_size = 17
+Button/fonts/font = ExtResource("2_tao3s")
+Button/styles/normal = SubResource("StyleBoxFlat_onc2o")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rbtmn"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="Theme" id="Theme_q6tfd"]
+default_font = ExtResource("2_m0qll")
+Button/colors/font_color = Color(0.560784, 0.501961, 0.2, 1)
+Button/font_sizes/font_size = 15
+Button/fonts/font = ExtResource("2_tao3s")
+Button/styles/normal = SubResource("StyleBoxFlat_rbtmn")
+
+[node name="main_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iqvgf")
+
+[node name="menu1" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="background" type="TextureRect" parent="menu1"]
+layout_mode = 2
+offset_right = 640.0
+offset_bottom = 480.0
+texture = ExtResource("1_87csc")
+expand_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="menu1"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 38.0
+offset_top = -2.0
+offset_right = 638.0
+offset_bottom = 203.0
+grow_vertical = 2
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="menu1/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="menu1/MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="menu1/MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ContinueButton" type="Button" parent="menu1/MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme = SubResource("Theme_6uaqo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5fbra")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ajx1")
+text = "CONTINUAR"
+
+[node name="NewgameButton" type="Button" parent="menu1/MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_nh780")
+text = "NOVO JOGO"
+
+[node name="OptionsButton" type="Button" parent="menu1/MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_b2gv1")
+text = "OPÇÕES
+"
+
+[node name="QuitButton" type="Button" parent="menu1/MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_q6tfd")
+text = "SAIR"
+
+[node name="carol" type="TextureRect" parent="menu1/MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0

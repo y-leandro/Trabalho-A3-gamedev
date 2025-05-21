@@ -2867,6 +2867,7 @@ script = ExtResource("1_1it6c")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.988984, 0)
 shape = SubResource("CapsuleShape3D_ot5e0")
 
+<<<<<<< HEAD
 [node name="blockbench_export" type="Node3D" parent="."]
 transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 0, 0, 0)
 
@@ -3001,3 +3002,9 @@ skeleton = NodePath("")
 libraries = {
 "": SubResource("AnimationLibrary_7v5al")
 }
+=======
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_e2457")
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+>>>>>>> 3a2ac739f1b35372b7202dcfcb3c092fa7333cf7
