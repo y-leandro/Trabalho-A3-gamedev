@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://cbn81583pptaj"]
+[gd_scene load_steps=16 format=3 uid="uid://cbn81583pptaj"]
 
 [ext_resource type="Texture2D" uid="uid://bm2eb1m2xrnd1" path="res://background.png" id="1_87csc"]
+[ext_resource type="Script" path="res://main_menu/main_menu.gd" id="1_iqvgf"]
 [ext_resource type="FontFile" uid="uid://dtcmcn6718dsi" path="res://InknutAntiqua-Regular.ttf" id="2_m0qll"]
 [ext_resource type="FontFile" uid="uid://bvy1ofx8ym67b" path="res://font4/InknutAntiqua-ExtraBold.ttf" id="2_tao3s"]
 
@@ -60,45 +61,51 @@ Button/font_sizes/font_size = 15
 Button/fonts/font = ExtResource("2_tao3s")
 Button/styles/normal = SubResource("StyleBoxFlat_rbtmn")
 
-[node name="titleScreen" type="Control"]
+[node name="main_menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_iqvgf")
 
-[node name="background" type="TextureRect" parent="."]
+[node name="menu1" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="background" type="TextureRect" parent="menu1"]
 layout_mode = 2
 offset_right = 640.0
 offset_bottom = 480.0
 texture = ExtResource("1_87csc")
 expand_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="menu1"]
 layout_mode = 1
 anchors_preset = 9
 anchor_bottom = 1.0
 offset_left = 38.0
 offset_top = -2.0
 offset_right = 638.0
-offset_bottom = -2.0
+offset_bottom = 203.0
 grow_vertical = 2
 theme_override_constants/margin_top = 20
 theme_override_constants/margin_bottom = 20
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="menu1/MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="menu1/MarginContainer/HBoxContainer"]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="menu1/MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="continuar_btn" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="ContinueButton" type="Button" parent="menu1/MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 4
 theme = SubResource("Theme_6uaqo")
@@ -106,21 +113,26 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_5fbra")
 theme_override_styles/normal = SubResource("StyleBoxFlat_4ajx1")
 text = "CONTINUAR"
 
-[node name="novojogo_btn" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="NewgameButton" type="Button" parent="menu1/MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 theme = SubResource("Theme_nh780")
 text = "NOVO JOGO"
 
-[node name="opções_btn" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="OptionsButton" type="Button" parent="menu1/MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 theme = SubResource("Theme_b2gv1")
 text = "OPÇÕES
 "
 
-[node name="sair_btn" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="QuitButton" type="Button" parent="menu1/MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 theme = SubResource("Theme_q6tfd")
 text = "SAIR"
 
-[node name="carol" type="TextureRect" parent="MarginContainer/HBoxContainer"]
+[node name="carol" type="TextureRect" parent="menu1/MarginContainer/HBoxContainer"]
 layout_mode = 2
+
+[node name="Control2" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
