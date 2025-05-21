@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bgaig6tnbj7sh"]
 
 [ext_resource type="PackedScene" uid="uid://b7ghunxqy8hs6" path="res://scn/player.tscn" id="1_py80b"]
-[ext_resource type="PackedScene" path="res://scn/auto_fixed_camera.tscn" id="1_ufm47"]
+[ext_resource type="PackedScene" uid="uid://c2ky3d1ylwrol" path="res://scn/auto_fixed_camera.tscn" id="1_ufm47"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_mjxew"]
 size = Vector3(4.27039, 3.245, 4.68091)

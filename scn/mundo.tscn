@@ -26,7 +26,7 @@ current = true
 environment = SubResource("Environment_37vwl")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.72351, 0.690314, 0, -0.690314, 0.72351, 0, 2.94145, 4.67277)
+transform = Transform3D(1, 0, 0, 0, -0.560667, 0.828041, 0, -0.828041, -0.560667, 1.50724, 16.1837, 4.67277)
 light_color = Color(0.425668, 0.533439, 0.578021, 1)
 shadow_enabled = true
 shadow_blur = 2.429

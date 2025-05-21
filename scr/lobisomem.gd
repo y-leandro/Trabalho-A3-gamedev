@@ -1,6 +1,8 @@
 extends CharacterBody3D
 
 @export var player : Node3D = null
+@onready var anim = $AnimationPlayer
+@onready var model = self
 
 const WALKING_SPEED = 50.0
 const RUNNING_SPEED = 225.0
@@ -63,11 +65,15 @@ func _physics_process(delta: float) -> void:
 			velocity.x = dir.x * WALKING_SPEED * delta
 			velocity.z = dir.y * WALKING_SPEED * delta
 			timer -= delta
+			var target_angle = atan2(-dir.x, -dir.y)
+			model.rotation.y = lerp_angle(model.rotation.y, target_angle, delta * 8)
 			
+			anim.play("walk")
 			if timer <= 0:
 				idle_state = IdleStates.still
 				timer = randf_range(2, 4)
 		if idle_state == IdleStates.still:
+			anim.play("idle")
 			velocity = Vector3()
 			timer -= delta
 			if timer <= 0:
