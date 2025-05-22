@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvb7jp8gpvj2"]
+
+[ext_resource type="Script" path="res://scr/hidding_spot.gd" id="1_2lwcq"]
+[ext_resource type="PackedScene" uid="uid://bpkc2t3ow6udd" path="res://obj/player/carol.gltf" id="1_2t23d"]
+
+[node name="HiddingSpot" type="Node3D"]
+script = ExtResource("1_2lwcq")
+
+[node name="DirIndication" parent="." instance=ExtResource("1_2t23d")]

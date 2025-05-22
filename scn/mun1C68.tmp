@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://cqb1twp436bhj"]
+
+[ext_resource type="PackedScene" uid="uid://b7ghunxqy8hs6" path="res://scn/player.tscn" id="1_yufry"]
+[ext_resource type="PackedScene" uid="uid://b54whow5jf4ob" path="res://scn/mapa_1.tscn" id="3_ctbvs"]
+[ext_resource type="PackedScene" uid="uid://bpcvupgae0lec" path="res://obj/placapare1.gltf" id="3_u6fpa"]
+[ext_resource type="PackedScene" uid="uid://d3obwb3mi24yf" path="res://scn/lobisomem.tscn" id="4_c6b1t"]
+
+[sub_resource type="GDScript" id="GDScript_qbplh"]
+script/source = "extends Node3D
+
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="Environment" id="Environment_37vwl"]
+background_mode = 1
+background_color = Color(0.0350491, 0.0724851, 0.109033, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_uyicd"]
+
+[node name="mundo" type="Node3D"]
+script = SubResource("GDScript_qbplh")
+
+[node name="player" parent="." instance=ExtResource("1_yufry")]
+transform = Transform3D(-0.998297, 0, -0.0583307, 0, 1, 0, 0.0583307, 0, -0.998297, 6.30476, 4.55413, -21.2747)
+
+[node name="Camera3D" type="Camera3D" parent="player"]
+transform = Transform3D(1, 0, 0, 0, 0.970511, 0.241058, 0, -0.241058, 0.970511, 0, 2.21909, 5.15178)
+current = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_37vwl")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.560667, 0.828041, 0, -0.828041, -0.560667, 1.50724, 16.1837, 4.67277)
+light_color = Color(0.425668, 0.533439, 0.578021, 1)
+shadow_enabled = true
+shadow_blur = 2.429
+
+[node name="blockbench_export" parent="." instance=ExtResource("3_u6fpa")]
+transform = Transform3D(4.9347, 0, -0.805436, 0, 5, 0, 0.805436, 0, 4.9347, -7.88994, -3.24311, 63.769)
+
+[node name="mapa1" parent="." instance=ExtResource("3_ctbvs")]
+
+[node name="Lobisomem" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_c6b1t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.12258, 8.19046, -25.7944)
+player = NodePath("../player")
+
+[node name="lastPlayerView" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.0795, 0)
+mesh = SubResource("BoxMesh_uyicd")
