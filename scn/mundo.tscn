@@ -1,19 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://cqb1twp436bhj"]
+[gd_scene load_steps=5 format=3 uid="uid://cqb1twp436bhj"]
 
 [ext_resource type="PackedScene" uid="uid://b7ghunxqy8hs6" path="res://scn/player.tscn" id="1_yufry"]
 [ext_resource type="PackedScene" uid="uid://b54whow5jf4ob" path="res://scn/mapa_1.tscn" id="3_ctbvs"]
 [ext_resource type="PackedScene" uid="uid://bpcvupgae0lec" path="res://obj/placapare1.gltf" id="3_u6fpa"]
-[ext_resource type="PackedScene" uid="uid://dmwbiy1twyjiv" path="res://scn/lobisomem.tscn" id="4_8pi2m"]
 
 [sub_resource type="Environment" id="Environment_37vwl"]
 background_mode = 1
 background_color = Color(0.0350491, 0.0724851, 0.109033, 1)
 
 [node name="mundo" type="Node3D"]
-
-[node name="Lobisomem" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_8pi2m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.61045, -18.108)
-player = NodePath("../player")
 
 [node name="player" parent="." instance=ExtResource("1_yufry")]
 transform = Transform3D(-0.998297, 0, -0.0583307, 0, 1, 0, 0.0583307, 0, -0.998297, 6.30476, 4.55413, -21.2747)

@@ -75,12 +75,12 @@ func _physics_process(delta: float) -> void:
 			var target_angle = atan2(-dir.x, -dir.y)
 			model.rotation.y = lerp_angle(model.rotation.y, target_angle, delta * 8)
 			
-			anim.play("walk")
+			#anim.play("walk")
 			if timer <= 0:
 				idle_state = IdleStates.still
 				timer = randf_range(2, 4)
 		if idle_state == IdleStates.still:
-			anim.play("idle")
+			#anim.play("idle")
 			velocity = Vector3()
 			timer -= delta
 			if timer <= 0:
