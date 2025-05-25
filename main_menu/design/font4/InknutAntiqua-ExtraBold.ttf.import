@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bvy1ofx8ym67b"
-path="res://.godot/imported/InknutAntiqua-ExtraBold.ttf-dd8a9a84a4f61cc2f8ec4f6432fc9849.fontdata"
+path="res://.godot/imported/InknutAntiqua-ExtraBold.ttf-af4d2d4b1eb9ac7e588b8eba4f684a8a.fontdata"
 
 [deps]
 
-source_file="res://font4/InknutAntiqua-ExtraBold.ttf"
-dest_files=["res://.godot/imported/InknutAntiqua-ExtraBold.ttf-dd8a9a84a4f61cc2f8ec4f6432fc9849.fontdata"]
+source_file="res://main_menu/design/font4/InknutAntiqua-ExtraBold.ttf"
+dest_files=["res://.godot/imported/InknutAntiqua-ExtraBold.ttf-af4d2d4b1eb9ac7e588b8eba4f684a8a.fontdata"]
 
 [params]
 

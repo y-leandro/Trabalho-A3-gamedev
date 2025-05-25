@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://crlvpfrglog84"
-path="res://.godot/imported/InknutAntiqua-Light.ttf-b995ea2f6109414ad1ded3b520ca52d7.fontdata"
+path="res://.godot/imported/InknutAntiqua-Light.ttf-b24664fdbcfc9eb6f3ac20cf588b0a69.fontdata"
 
 [deps]
 
-source_file="res://font4/InknutAntiqua-Light.ttf"
-dest_files=["res://.godot/imported/InknutAntiqua-Light.ttf-b995ea2f6109414ad1ded3b520ca52d7.fontdata"]
+source_file="res://main_menu/design/font4/InknutAntiqua-Light.ttf"
+dest_files=["res://.godot/imported/InknutAntiqua-Light.ttf-b24664fdbcfc9eb6f3ac20cf588b0a69.fontdata"]
 
 [params]
 

@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://dbfqht757yb7e"
-path="res://.godot/imported/InknutAntiqua-Bold.ttf-996a94f59b5c3dcd6aba0bbee2ec40c7.fontdata"
+uid="uid://d0gwaq4uxep3q"
+path="res://.godot/imported/InknutAntiqua-SemiBold.ttf-abbb687d708eeaccd49c53a75e3654e2.fontdata"
 
 [deps]
 
-source_file="res://font4/InknutAntiqua-Bold.ttf"
-dest_files=["res://.godot/imported/InknutAntiqua-Bold.ttf-996a94f59b5c3dcd6aba0bbee2ec40c7.fontdata"]
+source_file="res://main_menu/design/font4/InknutAntiqua-SemiBold.ttf"
+dest_files=["res://.godot/imported/InknutAntiqua-SemiBold.ttf-abbb687d708eeaccd49c53a75e3654e2.fontdata"]
 
 [params]
 
