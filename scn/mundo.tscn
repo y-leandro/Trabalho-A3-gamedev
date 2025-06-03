@@ -24,13 +24,12 @@ transform = Transform3D(-0.998297, 0, -0.0583307, 0, 1, 0, 0.0583307, 0, -0.9982
 
 [node name="Camera3D" type="Camera3D" parent="player"]
 transform = Transform3D(1, 0, 0, 0, 0.970511, 0.241058, 0, -0.241058, 0.970511, 0, 2.21909, 5.15178)
-current = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_37vwl")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -0.560667, 0.828041, 0, -0.828041, -0.560667, 1.50724, 16.1837, 4.67277)
+transform = Transform3D(0.947289, 0.246008, -0.205243, 0, 0.64062, 0.767858, 0.320382, -0.727383, 0.606852, 1.50724, 16.1837, 4.67277)
 light_color = Color(0.425668, 0.533439, 0.578021, 1)
 shadow_enabled = true
 shadow_blur = 2.429
@@ -43,3 +42,7 @@ transform = Transform3D(4.9347, 0, -0.805436, 0, 5, 0, 0.805436, 0, 4.9347, -7.8
 [node name="Lobisomem" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_c6b1t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.12258, 8.19046, -25.7944)
 player = NodePath("../player")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.669829, 0.0775226, -0.738457, -0.0021968, 0.994737, 0.102434, 0.742512, -0.066991, 0.666474, -3.79352, 7.36048, -21.4923)
+current = true
