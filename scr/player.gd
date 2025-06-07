@@ -6,6 +6,7 @@ const JUMP_VELOCITY = 4.5
 
 var lp = 5
 
+var chaves = []
 
 @onready var model = $model
 @onready var anim = $anim

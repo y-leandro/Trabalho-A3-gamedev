@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://i6awd36wye2a"]
+
+[ext_resource type="PackedScene" uid="uid://b7ghunxqy8hs6" path="res://scn/player.tscn" id="1_8aw3t"]
+[ext_resource type="PackedScene" uid="uid://bnyy2syak4c7p" path="res://obj/door_and_key/key_item.tscn" id="2_m2ci5"]
+[ext_resource type="PackedScene" uid="uid://xkyohsq8cod5" path="res://obj/door_and_key/door.tscn" id="3_y2254"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_k5dl4"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_xw86v"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[node name="TesteKeyDoor" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.941929, 0.335813, 0, -0.335813, 0.941929, -0.623929, 2.33854, 4.78167)
+
+[node name="player" parent="." instance=ExtResource("1_8aw3t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45015, 0.25, 2.17103)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(100, 0, 0, 0, 0.5, 0, 0, 0, 100, 0, 0, 0)
+mesh = SubResource("BoxMesh_k5dl4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(100, 0, 0, 0, 0.5, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_xw86v")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.976179, -0.181818, -0.118395, 0.216968, 0.818033, 0.532679, 0, -0.545678, 0.837995, 0, 0, 0)
+shadow_enabled = true
+
+[node name="KeyItem" parent="." instance=ExtResource("2_m2ci5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.623929, 1.05941, 0.875084)
+k_name = "chave"
+
+[node name="Door" parent="." instance=ExtResource("3_y2254")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.53853, 0.25, -0.870672)
+k_name = "chave"
