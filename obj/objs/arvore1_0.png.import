@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b02tescq7pv0o"
-path.s3tc="res://.godot/imported/grama.png-c3954129939bd134924b8177d4ffbc1c.s3tc.ctex"
+uid="uid://bejggehswxavf"
+path.s3tc="res://.godot/imported/arvore1_0.png-664926febefff5228e3727ace0396938.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "ee2782df9ef0224bc616540a555f9fca"
+}
 
 [deps]
 
-source_file="res://ast/grama.png"
-dest_files=["res://.godot/imported/grama.png-c3954129939bd134924b8177d4ffbc1c.s3tc.ctex"]
+source_file="res://obj/objs/arvore1_0.png"
+dest_files=["res://.godot/imported/arvore1_0.png-664926febefff5228e3727ace0396938.s3tc.ctex"]
 
 [params]
 

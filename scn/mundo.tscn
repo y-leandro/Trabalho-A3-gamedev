@@ -20,10 +20,11 @@ background_color = Color(0.0350491, 0.0724851, 0.109033, 1)
 script = SubResource("GDScript_qbplh")
 
 [node name="player" parent="." instance=ExtResource("1_yufry")]
-transform = Transform3D(-0.998297, 0, -0.0583307, 0, 1, 0, 0.0583307, 0, -0.998297, 6.30476, 4.55413, -21.2747)
+transform = Transform3D(-0.998297, 0, -0.0583307, 0, 1, 0, 0.0583307, 0, -0.998297, -13.4214, 1.34863, -68.1847)
 
 [node name="Camera3D" type="Camera3D" parent="player"]
 transform = Transform3D(1, 0, 0, 0, 0.970511, 0.241058, 0, -0.241058, 0.970511, 0, 2.21909, 5.15178)
+current = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_37vwl")
@@ -44,5 +45,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.12258, 8.19046, -25.7944)
 player = NodePath("../player")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.669829, 0.0775226, -0.738457, -0.0021968, 0.994737, 0.102434, 0.742512, -0.066991, 0.666474, -3.79352, 7.36048, -21.4923)
-current = true
+transform = Transform3D(-0.68941, 0.267711, -0.673086, 0.0399752, 0.941845, 0.333662, 0.723267, 0.203123, -0.660019, -19.3097, 5.40357, -78.7836)

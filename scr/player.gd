@@ -29,7 +29,7 @@ func _physics_process(delta: float) -> void:
 		var cam_yaw = cam.global_transform.basis.get_euler().y
 		direction = (Vector3(input_dir.x, 0, input_dir.y)).rotated(Vector3.UP, cam_yaw).normalized()
 		
-		var target_angle = atan2(direction.x, direction.z)
+		var target_angle = atan2(-direction.x, -direction.z)
 		model.rotation.y = lerp_angle(model.rotation.y, target_angle, delta * 8)
 		
 		velocity.x = direction.x * SPEED
