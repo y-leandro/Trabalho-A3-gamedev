@@ -24,7 +24,6 @@ transform = Transform3D(-0.998297, 0, -0.0583307, 0, 1, 0, 0.0583307, 0, -0.9982
 
 [node name="Camera3D" type="Camera3D" parent="player"]
 transform = Transform3D(1, 0, 0, 0, 0.970511, 0.241058, 0, -0.241058, 0.970511, 0, 2.21909, 5.15178)
-current = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_37vwl")
@@ -46,3 +45,4 @@ player = NodePath("../player")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(-0.68941, 0.267711, -0.673086, 0.0399752, 0.941845, 0.333662, 0.723267, 0.203123, -0.660019, -19.3097, 5.40357, -78.7836)
+current = true
