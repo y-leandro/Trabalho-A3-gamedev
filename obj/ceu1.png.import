@@ -2,20 +2,17 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bejggehswxavf"
-path.s3tc="res://.godot/imported/arvore1_0.png-664926febefff5228e3727ace0396938.s3tc.ctex"
+uid="uid://bfgqxvk7damtn"
+path.s3tc="res://.godot/imported/ceu1.png-9514a4d19385f24a5bd219a8663416c2.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
-generator_parameters={
-"md5": "1e021aded4ca3291c2b95f1ebdd84e7b"
-}
 
 [deps]
 
-source_file="res://obj/objs/arvore1_0.png"
-dest_files=["res://.godot/imported/arvore1_0.png-664926febefff5228e3727ace0396938.s3tc.ctex"]
+source_file="res://obj/ceu1.png"
+dest_files=["res://.godot/imported/ceu1.png-9514a4d19385f24a5bd219a8663416c2.s3tc.ctex"]
 
 [params]
 

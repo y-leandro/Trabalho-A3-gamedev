@@ -1,4 +1,4 @@
-[gd_scene load_steps=104 format=4 uid="uid://b54whow5jf4ob"]
+[gd_scene load_steps=105 format=4 uid="uid://b54whow5jf4ob"]
 
 [ext_resource type="Texture2D" uid="uid://bd4jfiw2bht2k" path="res://ast/chaocentro.png" id="1_queat"]
 [ext_resource type="PackedScene" uid="uid://dtlxa7qspvobb" path="res://obj/casas/casaflo2.gltf" id="2_1t33e"]
@@ -15,7 +15,8 @@
 [ext_resource type="Texture2D" uid="uid://dwxygj3ekqiii" path="res://obj/casas/casaflo1vermelho_0.png" id="12_rqjyq"]
 [ext_resource type="Texture2D" uid="uid://b02tescq7pv0o" path="res://ast/grama.png" id="13_4vg67"]
 [ext_resource type="Texture2D" uid="uid://bj1132oihyfxl" path="res://obj/casas/casaflo2vermelho_0.png" id="13_ygbig"]
-[ext_resource type="PackedScene" uid="uid://nx8u6lvvokm" path="res://obj/objs/arvore1.gltf" id="14_nlnyj"]
+[ext_resource type="PackedScene" uid="uid://nx8u6lvvokm" path="res://obj/objs/arvore1.gltf" id="16_dfhb3"]
+[ext_resource type="PackedScene" uid="uid://oxyu5wlm84sd" path="res://obj/casas/igreja.gltf" id="17_p0qe4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_svxw5"]
 resource_name = "material_0"
@@ -1479,6 +1480,41 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, 0, -0.0375004)
 mesh = SubResource("ArrayMesh_i85au")
 skeleton = NodePath("")
 
+[node name="cuboid49" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(-0.0781948, 0.0170159, 0.996838, 0.000442316, 1.20488, -0.0141298, -0.996938, -0.00080007, -0.0781932, -38.7848, -0.968617, -11.0239)
+mesh = SubResource("ArrayMesh_bif3b")
+skeleton = NodePath("")
+
+[node name="cuboid50" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(-0.078195, 0.0141211, 0.99684, 0.000442317, 0.9999, -0.0141298, -0.99694, -0.000663958, -0.0781935, -38.7659, 0.509107, -11.0248)
+mesh = SubResource("ArrayMesh_bif3b")
+skeleton = NodePath("")
+
+[node name="cuboid51" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(0.946977, 0.0141211, 0.320999, -0.0135868, 0.9999, -0.00390443, -0.321022, -0.000663956, 0.947074, -38.1452, 0.499712, -11.971)
+mesh = SubResource("ArrayMesh_bif3b")
+skeleton = NodePath("")
+
+[node name="cuboid52" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(-0.078195, 0.0141211, 0.99684, 0.000442317, 0.9999, -0.0141298, -0.996941, -0.000663958, -0.0781935, -39.0663, -1.31769, -11.4407)
+mesh = SubResource("ArrayMesh_160lg")
+skeleton = NodePath("")
+
+[node name="cuboid53" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(-0.078195, 0.0141211, 0.99684, 0.000442317, 0.9999, -0.0141298, -0.996941, -0.000663958, -0.0781935, -39.0443, 0.187074, -11.2366)
+mesh = SubResource("ArrayMesh_160lg")
+skeleton = NodePath("")
+
+[node name="cuboid54" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(-0.078195, 0.0141211, 0.99684, 0.000442317, 0.9999, -0.0141298, -0.996941, -0.000663958, -0.0781935, -38.9721, -1.75327, -10.5705)
+mesh = SubResource("ArrayMesh_jcsl5")
+skeleton = NodePath("")
+
+[node name="cuboid4" type="MeshInstance3D" parent="casas/blockbench_export8/Node/cuboid54"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, 0, -0.0375004)
+mesh = SubResource("ArrayMesh_i85au")
+skeleton = NodePath("")
+
 [node name="cuboid46" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
 transform = Transform3D(-0.117728, 0, 0.993048, 0, 1, 0, -0.993048, 0, -0.117728, -39.456, -1.54004, -15.6819)
 mesh = SubResource("ArrayMesh_jcsl5")
@@ -1505,6 +1541,16 @@ mesh = SubResource("ArrayMesh_jcsl5")
 skeleton = NodePath("")
 
 [node name="cuboid4" type="MeshInstance3D" parent="casas/blockbench_export8/Node/cuboid4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, 0, -0.0375004)
+mesh = SubResource("ArrayMesh_i85au")
+skeleton = NodePath("")
+
+[node name="cuboid55" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(0.998275, 0, 0.0587318, 0, 1, 0, -0.0587318, 0, 0.998275, -22.9172, -0.76164, -22.1888)
+mesh = SubResource("ArrayMesh_jcsl5")
+skeleton = NodePath("")
+
+[node name="cuboid4" type="MeshInstance3D" parent="casas/blockbench_export8/Node/cuboid55"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, 0, -0.0375004)
 mesh = SubResource("ArrayMesh_i85au")
 skeleton = NodePath("")
@@ -1570,11 +1616,41 @@ mesh = SubResource("ArrayMesh_i85au")
 skeleton = NodePath("")
 
 [node name="cuboid45" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
-transform = Transform3D(-0.99286, -0.0358443, -0.113801, -0.0341474, 0.999275, -0.0168267, 0.114322, -0.0128205, -0.993364, -37.661, -1.27344, -25.3224)
+transform = Transform3D(-0.99286, -0.0358443, -0.113801, -0.0341474, 0.999275, -0.0168267, 0.114322, -0.0128205, -0.993364, -37.661, -1.32927, -25.3224)
 mesh = SubResource("ArrayMesh_jcsl5")
 skeleton = NodePath("")
 
 [node name="cuboid4" type="MeshInstance3D" parent="casas/blockbench_export8/Node/cuboid45"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, 0, -0.0375004)
+mesh = SubResource("ArrayMesh_i85au")
+skeleton = NodePath("")
+
+[node name="cuboid58" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(-0.998171, -0.0358399, -0.0487873, -0.0374634, 0.99876, 0.0327794, 0.0475523, 0.0345469, -0.998275, -52.9449, -2.45783, -5.80419)
+mesh = SubResource("ArrayMesh_jcsl5")
+skeleton = NodePath("")
+
+[node name="cuboid4" type="MeshInstance3D" parent="casas/blockbench_export8/Node/cuboid58"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, 0, -0.0375004)
+mesh = SubResource("ArrayMesh_i85au")
+skeleton = NodePath("")
+
+[node name="cuboid66" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(0.985965, 0.0330762, 0.163676, -0.0338344, 0.999426, 0.00184567, -0.163521, -0.0073576, 0.986517, -58.1202, -2.6428, -2.33842)
+mesh = SubResource("ArrayMesh_jcsl5")
+skeleton = NodePath("")
+
+[node name="cuboid4" type="MeshInstance3D" parent="casas/blockbench_export8/Node/cuboid66"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, 0, -0.0375004)
+mesh = SubResource("ArrayMesh_i85au")
+skeleton = NodePath("")
+
+[node name="cuboid48" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(0.994977, -0.00893404, 0.0997568, 0.00728418, 0.999831, 0.0168928, -0.0998911, -0.0160811, 0.994873, -44.0772, -2.05101, -2.72829)
+mesh = SubResource("ArrayMesh_jcsl5")
+skeleton = NodePath("")
+
+[node name="cuboid4" type="MeshInstance3D" parent="casas/blockbench_export8/Node/cuboid48"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, 0, -0.0375004)
 mesh = SubResource("ArrayMesh_i85au")
 skeleton = NodePath("")
@@ -1634,6 +1710,46 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.78233, -0.157537, -12.2814
 mesh = SubResource("ArrayMesh_i85au")
 skeleton = NodePath("")
 
+[node name="cuboid29" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(0.999291, 0, -0.0376727, 0, 1, 0, 0.0376727, 0, 0.999291, -46.1004, -1.4195, -2.49193)
+mesh = SubResource("ArrayMesh_bif3b")
+skeleton = NodePath("")
+
+[node name="cuboid59" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(1.00928, 0, -0.0376726, 0, 1, 0, 0.0380494, 0, 0.99929, -46.1004, -0.0779957, -2.49193)
+mesh = SubResource("ArrayMesh_bif3b")
+skeleton = NodePath("")
+
+[node name="cuboid60" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(0.209294, 0, -0.977855, 0, 1, 0, 0.977855, 0, 0.209294, -45.2325, -0.0779957, -1.7659)
+mesh = SubResource("ArrayMesh_bif3b")
+skeleton = NodePath("")
+
+[node name="cuboid61" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(0.267688, 0, 0.971019, 0, 1, 0, -1.08754, 0, 0.239009, -49.986, -0.0283557, -1.61978)
+mesh = SubResource("ArrayMesh_bif3b")
+skeleton = NodePath("")
+
+[node name="cuboid62" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(0.999291, 0, -0.0376727, 0, 1, 0, 0.0376727, 0, 0.999291, -45.6538, -1.7945, -2.7253)
+mesh = SubResource("ArrayMesh_160lg")
+skeleton = NodePath("")
+
+[node name="cuboid63" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(0.999291, 0, -0.0376727, 0, 1, 0, 0.0376727, 0, 0.999291, -45.6538, -0.403786, -2.7253)
+mesh = SubResource("ArrayMesh_160lg")
+skeleton = NodePath("")
+
+[node name="cuboid64" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(0.999291, 0, -0.0376727, 0, 1, 0, 0.0376727, 0, 0.999291, -46.5294, -2.1695, -2.72697)
+mesh = SubResource("ArrayMesh_jcsl5")
+skeleton = NodePath("")
+
+[node name="cuboid65" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(-0.999899, 0, 0.0142414, 0, 1, 0, -0.0142414, 0, -0.999899, -46.6335, -2.20403, -2.69775)
+mesh = SubResource("ArrayMesh_i85au")
+skeleton = NodePath("")
+
 [node name="cuboid22" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
 transform = Transform3D(-0.993853, 0, -0.110723, 0, 1, 0, 0.110723, 0, -0.993853, -24.175, 1.31001, -11.6112)
 mesh = SubResource("ArrayMesh_bif3b")
@@ -1650,7 +1766,7 @@ mesh = SubResource("ArrayMesh_bif3b")
 skeleton = NodePath("")
 
 [node name="cuboid25" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
-transform = Transform3D(-0.103688, 0, -0.995707, 0, 1, 0, 1.11519, 0, -0.0925798, -20.4614, 2.70115, -13.0491)
+transform = Transform3D(-0.103688, 0, -0.995707, 0, 1, 0, 1.11519, 0, -0.0925798, -20.4614, 2.71468, -13.0491)
 mesh = SubResource("ArrayMesh_bif3b")
 skeleton = NodePath("")
 
@@ -1670,12 +1786,22 @@ mesh = SubResource("ArrayMesh_160lg")
 skeleton = NodePath("")
 
 [node name="cuboid28" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
-transform = Transform3D(-0.0930456, 0.00454297, -0.995655, 0.0428804, 0.99908, 0.000551379, 0.994741, -0.0426427, -0.0931548, -20.2646, 0.53058, -12.8673)
+transform = Transform3D(-0.983044, -0.0178259, -0.182524, -0.0175941, 0.999841, -0.00289048, 0.182546, 0.000369843, -0.983201, -21.0865, 0.60621, -11.9109)
 mesh = SubResource("ArrayMesh_jcsl5")
 skeleton = NodePath("")
 
-[node name="cuboid29" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
-transform = Transform3D(0.0697975, 0.00272271, 0.99756, -0.0813475, 0.996681, 0.00297141, -0.994241, -0.0813561, 0.0697874, -20.282, 0.487637, -12.97)
+[node name="cuboid29" type="MeshInstance3D" parent="casas/blockbench_export8/Node/cuboid28"]
+transform = Transform3D(-0.998989, -0.0384431, -0.0232705, -0.0385586, 0.999246, 0.00452464, 0.0230792, 0.00541733, -0.999718, -0.102383, -0.0386029, 0.0268683)
+mesh = SubResource("ArrayMesh_i85au")
+skeleton = NodePath("")
+
+[node name="cuboid56" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(0.0304701, 0.00153127, -0.999539, -0.00577717, 0.999982, 0.00135587, 0.999523, 0.00573292, 0.0304785, -20.5693, -0.146985, -17.7432)
+mesh = SubResource("ArrayMesh_jcsl5")
+skeleton = NodePath("")
+
+[node name="cuboid57" type="MeshInstance3D" parent="casas/blockbench_export8/Node"]
+transform = Transform3D(-0.0535668, -0.00505609, 0.998555, -0.0327553, 0.999458, 0.00330352, -0.99803, -0.0325311, -0.0537034, -20.5994, -0.184959, -17.8449)
 mesh = SubResource("ArrayMesh_i85au")
 skeleton = NodePath("")
 
@@ -1754,6 +1880,26 @@ transform = Transform3D(-0.977787, -0.0207894, 0.208571, -0.0197207, 0.99978, 0.
 mesh = SubResource("ArrayMesh_ohnas")
 skeleton = NodePath("")
 
+[node name="cuboid12" type="MeshInstance3D" parent="casas/blockbench_export5/Node"]
+transform = Transform3D(0.0315089, -0.00701902, 0.998805, -0.0128185, 1.12475, 0.00720234, -0.649109, -0.0225522, 0.0483416, 11.6608, -1.514, -29.206)
+mesh = SubResource("ArrayMesh_24wy5")
+skeleton = NodePath("")
+
+[node name="cuboid15" type="MeshInstance3D" parent="casas/blockbench_export5/Node"]
+transform = Transform3D(0.0316166, 0.0164676, 0.998681, 0.00541953, 0.999822, -0.0168925, -0.649207, 0.00914841, 0.048495, 11.655, -0.123282, -29.1898)
+mesh = SubResource("ArrayMesh_24wy5")
+skeleton = NodePath("")
+
+[node name="cuboid14" type="MeshInstance3D" parent="casas/blockbench_export5/Node"]
+transform = Transform3D(0.753466, 0.0232481, -0.171752, -0.0150864, 1.12475, 0.00720232, 0.131475, -0.00417, 0.985114, 7.50538, -1.86147, -29.6207)
+mesh = SubResource("ArrayMesh_24wy5")
+skeleton = NodePath("")
+
+[node name="cuboid13" type="MeshInstance3D" parent="casas/blockbench_export5/Node"]
+transform = Transform3D(0.984924, 0.0206649, -0.171752, -0.0197207, 0.99978, 0.00720232, 0.171863, -0.00370667, 0.985113, 7.65531, -2.15802, -29.8395)
+mesh = SubResource("ArrayMesh_ohnas")
+skeleton = NodePath("")
+
 [node name="cuboid3" type="MeshInstance3D" parent="casas/blockbench_export5/Node"]
 transform = Transform3D(0.0359286, 0, 0.999355, 0, 1, 0, -0.999355, 0, 0.0359286, 17.9184, 0.75, -4.43519)
 mesh = SubResource("ArrayMesh_24wy5")
@@ -1810,12 +1956,12 @@ mesh = SubResource("ArrayMesh_24wy5")
 skeleton = NodePath("")
 
 [node name="cuboid7" type="MeshInstance3D" parent="casas/blockbench_export9/Node"]
-transform = Transform3D(-0.998541, -0.0506004, -0.0189288, -0.0505912, 0.998719, -0.000963552, 0.0189534, -4.5168e-06, -0.999823, 11.0306, -1.40237, -44.0979)
+transform = Transform3D(-0.998541, -0.0506004, -0.0189288, -0.0505912, 0.998719, -0.000963552, 0.0189534, -4.51657e-06, -0.999823, 11.0303, -1.40238, -44.1034)
 mesh = SubResource("ArrayMesh_48kad")
 skeleton = NodePath("")
 
 [node name="cuboid8" type="MeshInstance3D" parent="casas/blockbench_export9/Node"]
-transform = Transform3D(-0.998541, -0.0506004, -0.0189288, -0.0505912, 0.998719, -0.000963552, 0.0189534, -4.5168e-06, -0.999823, 12.803, -1.31257, -44.1316)
+transform = Transform3D(-0.998541, -0.0506004, -0.0189288, -0.0505912, 0.998719, -0.000963552, 0.0189534, -4.51657e-06, -0.999823, 12.8027, -1.31258, -44.1371)
 mesh = SubResource("ArrayMesh_ohnas")
 skeleton = NodePath("")
 
@@ -1831,6 +1977,21 @@ skeleton = NodePath("")
 
 [node name="cuboid14" type="MeshInstance3D" parent="casas/blockbench_export9/Node"]
 transform = Transform3D(-0.0540881, 0.0138784, 0.998443, -0.0365748, 0.999206, -0.0158704, -0.997869, -0.0373762, -0.0535376, 23.9679, -0.714727, -32.4584)
+mesh = SubResource("ArrayMesh_ohnas")
+skeleton = NodePath("")
+
+[node name="cuboid19" type="MeshInstance3D" parent="casas/blockbench_export9/Node"]
+transform = Transform3D(0.0128568, -0.0368309, 0.999357, -0.036619, 1.09863, 0.0339333, -0.999247, -0.040735, 0.0116146, 4.1652, -1.5364, -48.5011)
+mesh = SubResource("ArrayMesh_24wy5")
+skeleton = NodePath("")
+
+[node name="cuboid20" type="MeshInstance3D" parent="casas/blockbench_export9/Node"]
+transform = Transform3D(0.0128569, -0.0334824, 0.999361, -0.0366191, 0.998755, 0.0339334, -0.99925, -0.0370319, 0.0116146, 3.93792, -1.92097, -49.3895)
+mesh = SubResource("ArrayMesh_48kad")
+skeleton = NodePath("")
+
+[node name="cuboid21" type="MeshInstance3D" parent="casas/blockbench_export9/Node"]
+transform = Transform3D(0.0128569, -0.0334824, 0.999361, -0.0366191, 0.998755, 0.0339334, -0.99925, -0.0370319, 0.0116146, 3.91509, -1.85598, -47.6158)
 mesh = SubResource("ArrayMesh_ohnas")
 skeleton = NodePath("")
 
@@ -1929,6 +2090,26 @@ transform = Transform3D(0.0182726, 0, -0.999834, 0, 1, 0, 0.999834, 0, 0.0182726
 mesh = SubResource("ArrayMesh_ohnas")
 skeleton = NodePath("")
 
+[node name="cuboid59" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
+transform = Transform3D(-0.041078, 0.0147048, 0.998106, -0.00368061, 1.25989, -0.0120192, -0.678748, -0.00772187, -0.0603404, -35.4248, -1.03233, -12.0125)
+mesh = SubResource("ArrayMesh_24wy5")
+skeleton = NodePath("")
+
+[node name="cuboid60" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
+transform = Transform3D(-0.0413777, 0.011025, 0.998114, -0.00374729, 0.99992, -0.0113761, -0.683739, -0.00614736, -0.0603402, -35.3982, 0.47628, -12.0233)
+mesh = SubResource("ArrayMesh_24wy5")
+skeleton = NodePath("")
+
+[node name="cuboid61" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
+transform = Transform3D(-0.0601562, 0.0123254, 0.998116, 0.0156598, 0.999812, -0.0114026, -0.998069, 0.0149443, -0.0603378, -35.6663, -1.39277, -11.9467)
+mesh = SubResource("ArrayMesh_ohnas")
+skeleton = NodePath("")
+
+[node name="cuboid62" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
+transform = Transform3D(-0.0601562, 0.0123254, 0.998116, 0.0156598, 0.999812, -0.0114026, -0.998069, 0.0149443, -0.0603378, -35.6333, 0.154034, -11.9264)
+mesh = SubResource("ArrayMesh_ohnas")
+skeleton = NodePath("")
+
 [node name="cuboid48" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
 transform = Transform3D(-0.998586, -0.00580082, -0.0529122, -0.00450432, 1.08986, -0.0155571, 0.052988, -0.0166734, -0.99848, -23.0148, -0.403721, -28.346)
 mesh = SubResource("ArrayMesh_24wy5")
@@ -1994,6 +2175,36 @@ transform = Transform3D(-0.999726, 0, 0.0234376, 0, 1, 0, -0.0234376, 0, -0.9997
 mesh = SubResource("ArrayMesh_ohnas")
 skeleton = NodePath("")
 
+[node name="cuboid40" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
+transform = Transform3D(0.999069, 0.0253469, -0.0376791, -0.021073, 1.20473, -0.000616599, 0.0376578, 0.00169909, 0.99929, -45.7726, -1.55448, -6.08423)
+mesh = SubResource("ArrayMesh_24wy5")
+skeleton = NodePath("")
+
+[node name="cuboid63" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
+transform = Transform3D(0.99907, 0.0210349, -0.0376792, -0.021073, 0.999778, -0.000616598, 0.0376578, 0.00141004, 0.999291, -45.7726, -0.0834857, -6.08422)
+mesh = SubResource("ArrayMesh_24wy5")
+skeleton = NodePath("")
+
+[node name="cuboid66" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
+transform = Transform3D(0.999291, -0.000418131, -0.0376707, 5.58916e-05, 0.999954, -0.00961646, 0.0376731, 0.00960752, 0.999245, -44.8638, -1.7945, -6.3001)
+mesh = SubResource("ArrayMesh_48kad")
+skeleton = NodePath("")
+
+[node name="cuboid67" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
+transform = Transform3D(0.999291, 0, -0.0376727, 0, 1, 0, 0.0376727, 0, 0.999291, -44.8638, -0.534966, -6.3001)
+mesh = SubResource("ArrayMesh_48kad")
+skeleton = NodePath("")
+
+[node name="cuboid68" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
+transform = Transform3D(0.999291, -0.000503119, -0.0376698, 6.7252e-05, 0.999933, -0.0115711, 0.0376732, 0.0115603, 0.999224, -46.6376, -1.7945, -6.36697)
+mesh = SubResource("ArrayMesh_ohnas")
+skeleton = NodePath("")
+
+[node name="cuboid69" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
+transform = Transform3D(0.999291, 0, -0.0376727, 0, 1, 0, 0.0376727, 0, 0.999291, -46.6376, -0.465976, -6.36697)
+mesh = SubResource("ArrayMesh_ohnas")
+skeleton = NodePath("")
+
 [node name="cuboid36" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
 transform = Transform3D(-0.993631, -0.0229028, -0.110717, -0.021073, 1.08976, -0.000616599, 0.110705, 0.0018753, -0.993853, -18.5309, 1.24889, -13.548)
 mesh = SubResource("ArrayMesh_24wy5")
@@ -2005,22 +2216,17 @@ mesh = SubResource("ArrayMesh_24wy5")
 skeleton = NodePath("")
 
 [node name="cuboid38" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
-transform = Transform3D(-0.993852, -0.00100921, -0.110718, 5.58916e-05, 0.999954, -0.00961646, 0.110723, -0.00956351, -0.993806, -19.3977, 0.935007, -13.1999)
+transform = Transform3D(-0.993852, -0.00100921, -0.110718, 5.58916e-05, 0.999954, -0.00961646, 0.110723, -0.00956351, -0.993806, -19.2145, 0.935007, -13.2262)
 mesh = SubResource("ArrayMesh_48kad")
 skeleton = NodePath("")
 
 [node name="cuboid39" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
-transform = Transform3D(-0.993852, 0, -0.110723, 0, 1, 0, 0.110723, 0, -0.993852, -19.3977, 2.27462, -13.1999)
+transform = Transform3D(-0.993852, 0, -0.110723, 0, 1, 0, 0.110723, 0, -0.993852, -19.2145, 2.27462, -13.2262)
 mesh = SubResource("ArrayMesh_48kad")
 skeleton = NodePath("")
 
-[node name="cuboid40" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
-transform = Transform3D(-0.993852, -0.00121434, -0.110716, 6.7252e-05, 0.999933, -0.0115711, 0.110723, -0.0115074, -0.993786, -17.6336, 0.935007, -13.3965)
-mesh = SubResource("ArrayMesh_ohnas")
-skeleton = NodePath("")
-
 [node name="cuboid41" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
-transform = Transform3D(-0.993852, 0, -0.110723, 0, 1, 0, 0.110723, 0, -0.993852, -17.6336, 2.34361, -13.3965)
+transform = Transform3D(-0.993852, 0, -0.110723, 0, 1, 0, 0.110723, 0, -0.993852, -17.7935, 2.34361, -13.4012)
 mesh = SubResource("ArrayMesh_ohnas")
 skeleton = NodePath("")
 
@@ -2125,12 +2331,12 @@ mesh = SubResource("ArrayMesh_24wy5")
 skeleton = NodePath("")
 
 [node name="cuboid55" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
-transform = Transform3D(0.999996, 0.000935822, 0.00383017, -0.000914417, 0.999984, -0.005574, -0.00383552, 0.00557049, 0.999981, -19.5982, 2.66547, -17.8472)
+transform = Transform3D(0.999996, 0.000935822, 0.00383017, -0.000914417, 0.999984, -0.005574, -0.00383552, 0.00557049, 0.999981, -19.6285, 2.66547, -17.8481)
 mesh = SubResource("ArrayMesh_24wy5")
 skeleton = NodePath("")
 
 [node name="cuboid56" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
-transform = Transform3D(0.999992, 0.00117907, 0.00382994, -0.000914414, 1.25998, -0.00557403, -0.0038351, 0.00701881, 0.999977, -19.6106, 1.17651, -17.8352)
+transform = Transform3D(0.999992, 0.00117907, 0.00382994, -0.000914414, 1.25998, -0.00557403, -0.0038351, 0.00701881, 0.999977, -19.6409, 1.17651, -17.8361)
 mesh = SubResource("ArrayMesh_24wy5")
 skeleton = NodePath("")
 
@@ -2139,8 +2345,18 @@ transform = Transform3D(0.492685, 0, -0.870212, 0, 1, 0, 0.870212, 0, 0.492685, 
 mesh = SubResource("ArrayMesh_ohnas")
 skeleton = NodePath("")
 
+[node name="cuboid64" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
+transform = Transform3D(-0.0432342, 0, -0.99907, 0, 1, 0, 0.99907, 0, -0.0432342, -16.8923, 0.574522, -16.7573)
+mesh = SubResource("ArrayMesh_ohnas")
+skeleton = NodePath("")
+
+[node name="cuboid65" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
+transform = Transform3D(-0.0432342, 0, -0.99907, 0, 1, 0, 0.99907, 0, -0.0432342, -16.8393, 0.440496, -17.9523)
+mesh = SubResource("ArrayMesh_ohnas")
+skeleton = NodePath("")
+
 [node name="cuboid58" type="MeshInstance3D" parent="casas/blockbench_export7/Node"]
-transform = Transform3D(1, 0, -0.00181516, 0, 1, 0, 0.00181516, 0, 1, -19.2808, 2.23564, -18.0956)
+transform = Transform3D(1, 0, -0.00181516, 0, 1, 0, 0.00181516, 0, 1, -19.3111, 2.23564, -18.0965)
 mesh = SubResource("ArrayMesh_ohnas")
 skeleton = NodePath("")
 
@@ -2169,10 +2385,10 @@ transform = Transform3D(-0.507728, -10.0184, -0.403306, 0.00237872, 2.18262, -1.
 transform = Transform3D(-0.156632, -10.2532, -0.414781, 0.00282532, 2.19378, -1.95615, 1.57724, -1.02215, -0.0376867, 28.1009, 6.46933, -6.15153)
 
 [node name="blockbench_export90" parent="casas" instance=ExtResource("2_i3yqr")]
-transform = Transform3D(-2.15784, -0.84579, -0.0250851, -0.000883843, 1.67824, -1.97446, 0.17592, -10.366, -0.317614, 20.2486, 6.64186, 4.68822)
+transform = Transform3D(-1.73888, -0.878429, 0.0135133, -0.034708, 1.66139, -1.97457, 0.141792, -10.366, -0.317615, 20.5489, 6.64588, 4.5691)
 
 [node name="blockbench_export91" parent="casas" instance=ExtResource("2_i3yqr")]
-transform = Transform3D(-1.37093, -6.08245, -0.185656, -0.000689938, 1.67824, -1.97446, 0.988263, -8.43645, -0.258921, 25.1636, 6.64186, 3.8721)
+transform = Transform3D(-1.37093, -6.08245, -0.185656, 0.0257662, 1.45179, -1.98068, 0.987927, -8.47835, -0.205972, 25.1636, 6.77433, 3.8721)
 
 [node name="blockbench_export92" parent="casas" instance=ExtResource("2_i3yqr")]
 transform = Transform3D(0.117762, 0, 1.98993, 0, 2, 0, -1.16908, 0, 0.200446, 24.674, 6.41549, -6.90784)
@@ -2181,7 +2397,7 @@ transform = Transform3D(0.117762, 0, 1.98993, 0, 2, 0, -1.16908, 0, 0.200446, 24
 transform = Transform3D(0.487028, 0, 1.9398, 0, 2, 0, -1.9398, 0, 0.487028, 23.6727, 6.41549, -2.00286)
 
 [node name="blockbench_export94" parent="casas" instance=ExtResource("2_i3yqr")]
-transform = Transform3D(1.9941, 0, 0.153577, 0, 2, 0, -0.153577, 0, 1.9941, 19.8348, 6.41549, 1.07318)
+transform = Transform3D(1.99372, -0.0390929, 0.153548, 0.0389776, 1.99962, 0.00300188, -0.153577, 0, 1.9941, 19.8371, 6.41147, 1.07318)
 
 [node name="blockbench_export95" parent="casas" instance=ExtResource("2_1t33e")]
 transform = Transform3D(0.211244, 0, 1.98881, 0, 2, 0, -1.98881, 0, 0.211244, 24.7765, 3.71137, -6.94985)
@@ -2229,8 +2445,58 @@ transform = Transform3D(1, 2.79511e-11, 3.72529e-09, -2.81053e-13, 1, -1.98562e-
 mesh = SubResource("ArrayMesh_p7hj1")
 skeleton = NodePath("")
 
+[node name="cuboid5" type="MeshInstance3D" parent="casas/blockbench_export75/Node/cuboid4"]
+transform = Transform3D(1, 2.79042e-11, -7.45058e-09, -1.75046e-10, 1, -2.97843e-11, 3.72529e-09, 1.85689e-09, 1, 0.124969, -0.0485457, -0.038517)
+mesh = SubResource("ArrayMesh_aqok6")
+skeleton = NodePath("")
+
 [node name="cuboid5" type="MeshInstance3D" parent="casas/blockbench_export75/Node"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, -0.25625)
+transform = Transform3D(0.997875, 0.00356514, -0.0650836, 4.56641e-05, 1.11362, 0.0497673, 0.0651621, -0.055376, 0.996638, 15.634, -0.0516078, -19.0464)
+mesh = SubResource("ArrayMesh_to7is")
+skeleton = NodePath("")
+
+[node name="cuboid11" type="MeshInstance3D" parent="casas/blockbench_export75/Node"]
+transform = Transform3D(0.997875, 0.00319743, -0.0650837, 4.56641e-05, 0.998762, 0.0497673, 0.0651621, -0.0496645, 0.996638, 16.5473, -0.369366, -19.2203)
+mesh = SubResource("ArrayMesh_34huo")
+skeleton = NodePath("")
+
+[node name="cuboid12" type="MeshInstance3D" parent="casas/blockbench_export75/Node"]
+transform = Transform3D(0.997875, 0.00319743, -0.0650837, 4.56641e-05, 0.998762, 0.0497673, 0.0651621, -0.0496645, 0.996638, 15.6492, -0.369406, -19.2789)
+mesh = SubResource("ArrayMesh_66812")
+skeleton = NodePath("")
+
+[node name="cuboid13" type="MeshInstance3D" parent="casas/blockbench_export75/Node"]
+transform = Transform3D(0.997875, 0.00319743, -0.0650837, 4.56636e-05, 0.998762, 0.0497673, 0.0651621, -0.0496645, 0.996638, 14.7727, -0.834653, -19.2835)
+mesh = SubResource("ArrayMesh_p7hj1")
+skeleton = NodePath("")
+
+[node name="cuboid5" type="MeshInstance3D" parent="casas/blockbench_export75/Node/cuboid13"]
+transform = Transform3D(1, 2.79042e-11, -7.45058e-09, -1.75046e-10, 1, -2.97843e-11, 3.72529e-09, 1.85689e-09, 1, 0.124969, -0.0485457, -0.038517)
+mesh = SubResource("ArrayMesh_aqok6")
+skeleton = NodePath("")
+
+[node name="cuboid6" type="MeshInstance3D" parent="casas/blockbench_export75/Node"]
+transform = Transform3D(-0.999296, 0.0022076, -0.0374651, 0.000406006, 1.11402, 0.0419709, 0.0375152, 0.0467476, -0.998417, -0.518841, 0.578913, -22.5112)
+mesh = SubResource("ArrayMesh_to7is")
+skeleton = NodePath("")
+
+[node name="cuboid7" type="MeshInstance3D" parent="casas/blockbench_export75/Node"]
+transform = Transform3D(-0.999296, 0.00197991, -0.0374651, 0.000406006, 0.99912, 0.0419709, 0.0375152, 0.0419261, -0.998417, -1.40954, 0.263309, -22.2421)
+mesh = SubResource("ArrayMesh_34huo")
+skeleton = NodePath("")
+
+[node name="cuboid8" type="MeshInstance3D" parent="casas/blockbench_export75/Node"]
+transform = Transform3D(-0.999296, 0.00197991, -0.0374651, 0.000406006, 0.99912, 0.0419709, 0.0375152, 0.0419261, -0.998417, -0.510176, 0.262944, -22.2759)
+mesh = SubResource("ArrayMesh_66812")
+skeleton = NodePath("")
+
+[node name="cuboid9" type="MeshInstance3D" parent="casas/blockbench_export75/Node"]
+transform = Transform3D(-0.999296, 0.00197991, -0.0374651, 0.000406006, 0.99912, 0.0419709, 0.0375152, 0.0419261, -0.998417, 0.362242, -0.203013, -22.3575)
+mesh = SubResource("ArrayMesh_p7hj1")
+skeleton = NodePath("")
+
+[node name="cuboid10" type="MeshInstance3D" parent="casas/blockbench_export75/Node"]
+transform = Transform3D(-0.999296, 0.00197991, -0.0374651, 0.000406006, 0.99912, 0.0419709, 0.0375152, 0.0419261, -0.998417, 0.238792, -0.112293, -22.3135)
 mesh = SubResource("ArrayMesh_aqok6")
 skeleton = NodePath("")
 
@@ -2350,6 +2616,26 @@ transform = Transform3D(0.999999, -1.86265e-09, -3.72529e-08, -1.86265e-09, 0.99
 mesh = SubResource("ArrayMesh_v24ih")
 skeleton = NodePath("")
 
+[node name="cuboid5" type="MeshInstance3D" parent="casas/blockbench_export29/Node"]
+transform = Transform3D(-0.99789, -0.0859765, 0.0147702, -0.0634591, 1.35707, -0.0164708, -0.0136972, -0.0236278, -0.999755, 54.4735, 0.145423, -10.1122)
+mesh = SubResource("ArrayMesh_7fflh")
+skeleton = NodePath("")
+
+[node name="cuboid10" type="MeshInstance3D" parent="casas/blockbench_export29/Node"]
+transform = Transform3D(-0.99789, -0.0995684, 0.0147702, -0.0634592, 1.57161, -0.0164708, -0.0136972, -0.027363, -0.999755, 57.4673, 0.221136, -10.0969)
+mesh = SubResource("ArrayMesh_7fflh")
+skeleton = NodePath("")
+
+[node name="cuboid11" type="MeshInstance3D" parent="casas/blockbench_export29/Node"]
+transform = Transform3D(-0.99789, -0.063218, 0.0147702, -0.0634591, 0.997848, -0.0164708, -0.0136972, -0.0173734, -0.999755, 53.8396, -0.163097, -9.87385)
+mesh = SubResource("ArrayMesh_v24ih")
+skeleton = NodePath("")
+
+[node name="cuboid12" type="MeshInstance3D" parent="casas/blockbench_export29/Node"]
+transform = Transform3D(-0.997889, -0.063218, 0.0147702, -0.0634591, 0.997847, -0.0164708, -0.0136972, -0.0173734, -0.999754, 57.8908, -0.197491, -9.83783)
+mesh = SubResource("ArrayMesh_v24ih")
+skeleton = NodePath("")
+
 [node name="cuboid4" type="MeshInstance3D" parent="casas/blockbench_export29/Node"]
 transform = Transform3D(1, 1.86265e-09, -3.72529e-09, -1.86265e-09, 1, -2.32831e-10, 0, 3.49246e-10, 1, -0.864359, -0.335628, -0.215907)
 mesh = SubResource("ArrayMesh_q8cwo")
@@ -2413,6 +2699,36 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9918, 0.375, -0.25)
 mesh = SubResource("ArrayMesh_b802r")
 skeleton = NodePath("")
 
+[node name="cuboid33" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
+transform = Transform3D(-0.00189609, 0, -0.999999, 0, 1.235, 0, 1.12, 0, -0.00169293, 18.4246, -0.143369, -22.5871)
+mesh = SubResource("ArrayMesh_vyuie")
+skeleton = NodePath("")
+
+[node name="cuboid36" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
+transform = Transform3D(0.037752, 0, -0.997879, 0, 1.235, 0, 0.57877, 0, 0.0650897, 18.375, -0.143369, -25.1067)
+mesh = SubResource("ArrayMesh_vyuie")
+skeleton = NodePath("")
+
+[node name="cuboid34" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
+transform = Transform3D(-1.1198, 0, 0.0189357, 0, 1.285, 0, -0.021208, 0, -0.99982, 16.9457, -0.175314, -21.1329)
+mesh = SubResource("ArrayMesh_vyuie")
+skeleton = NodePath("")
+
+[node name="cuboid37" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
+transform = Transform3D(-0.00189609, 0, -0.999999, 0, 1.235, 0, 1.12, 0, -0.00169293, 15.0724, 0.918119, -22.6377)
+mesh = SubResource("ArrayMesh_vyuie")
+skeleton = NodePath("")
+
+[node name="cuboid38" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
+transform = Transform3D(-1.50473, 0, 0.0189359, 0, 1.49, 0, -0.0284985, 0, -0.999821, 13.029, 0.78723, -21.2047)
+mesh = SubResource("ArrayMesh_vyuie")
+skeleton = NodePath("")
+
+[node name="cuboid35" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
+transform = Transform3D(-0.0016929, 0, -0.999999, 0, 1, 0, 0.999999, 0, -0.0016929, 18.6732, -0.38664, -21.7443)
+mesh = SubResource("ArrayMesh_b802r")
+skeleton = NodePath("")
+
 [node name="cuboid18" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
 transform = Transform3D(-0.998213, 0, 0.0597593, 0, 1, 0, -0.0597593, 0, -0.998213, 3.44316, 1.31075, -26.3598)
 mesh = SubResource("ArrayMesh_vyuie")
@@ -2423,13 +2739,23 @@ transform = Transform3D(-0.998213, 0, 0.0597593, 0, 1, 0, -0.0597593, 0, -0.9982
 mesh = SubResource("ArrayMesh_b802r")
 skeleton = NodePath("")
 
+[node name="cuboid46" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
+transform = Transform3D(-0.403725, 0, 0.672881, 0, 1, 0, -0.53105, 0, -0.29076, 1.4881, 1.30855, -27.0881)
+mesh = SubResource("ArrayMesh_vyuie")
+skeleton = NodePath("")
+
+[node name="cuboid45" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
+transform = Transform3D(-0.237836, 0, -0.938533, 0, 1, 0, 0.646649, 0, -0.345189, -6.35502, 1.35448, -27.5656)
+mesh = SubResource("ArrayMesh_vyuie")
+skeleton = NodePath("")
+
 [node name="cuboid20" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
-transform = Transform3D(-1.11997, 0, 0.00753966, 0, 1, 0, -0.00844442, 0, -0.999972, -6.9733, 1.31075, -26.64)
+transform = Transform3D(-0.709564, 0, -0.0350218, 0, 1, 0, 0.0248654, 0, -0.999387, -7.59587, 1.35733, -26.686)
 mesh = SubResource("ArrayMesh_vyuie")
 skeleton = NodePath("")
 
 [node name="cuboid21" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
-transform = Transform3D(-0.999972, 0, 0.00753966, 0, 1, 0, -0.00753966, 0, -0.999972, -7.81758, 0.93575, -26.3964)
+transform = Transform3D(-0.999387, 0, -0.0350217, 0, 1, 0, 0.0350217, 0, -0.999387, -7.82772, 0.982334, -26.4323)
 mesh = SubResource("ArrayMesh_b802r")
 skeleton = NodePath("")
 
@@ -2439,7 +2765,7 @@ mesh = SubResource("ArrayMesh_vyuie")
 skeleton = NodePath("")
 
 [node name="cuboid14" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
-transform = Transform3D(-0.998544, -0.0505058, -0.018929, -0.0504967, 0.998724, -0.000957253, 0.0189532, -4.41537e-09, -0.99982, 7.37859, -1.49487, -43.5176)
+transform = Transform3D(-0.998544, -0.0505058, -0.018929, -0.0504967, 0.998724, -0.000957253, 0.0189532, -4.41537e-09, -0.99982, 7.37859, -1.49487, -43.5252)
 mesh = SubResource("ArrayMesh_b802r")
 skeleton = NodePath("")
 
@@ -2449,7 +2775,7 @@ mesh = SubResource("ArrayMesh_vyuie")
 skeleton = NodePath("")
 
 [node name="cuboid16" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
-transform = Transform3D(-0.00191324, -0.0648999, 0.998722, -9.67581e-05, 1.28336, 0.0505057, -1.11999, -5.67375e-09, -0.0017103, 3.63456, -1.47261, -45.1735)
+transform = Transform3D(-0.00191506, -0.0328526, 0.999671, -4.89794e-05, 1.28458, 0.0255662, -1.11999, -2.86248e-09, -0.0017103, 3.64021, -1.47261, -45.1735)
 mesh = SubResource("ArrayMesh_vyuie")
 skeleton = NodePath("")
 
@@ -2478,6 +2804,46 @@ transform = Transform3D(-0.0541165, 0.0144898, 0.99843, -0.0343709, 0.999275, -0
 mesh = SubResource("ArrayMesh_b802r")
 skeleton = NodePath("")
 
+[node name="cuboid39" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
+transform = Transform3D(0.0128477, -0.0370927, 0.999378, -0.0370182, 1.1286, 0.033281, -0.999232, -0.0422878, 0.0116165, 3.83464, -1.60287, -51.2746)
+mesh = SubResource("ArrayMesh_vyuie")
+skeleton = NodePath("")
+
+[node name="cuboid40" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
+transform = Transform3D(0.0128476, -0.0328255, 0.999379, -0.0370182, 0.99876, 0.033281, -0.999232, -0.0374229, 0.0116166, 3.60603, -1.96489, -52.163)
+mesh = SubResource("ArrayMesh_b802r")
+skeleton = NodePath("")
+
+[node name="cuboid41" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
+transform = Transform3D(0.0143895, -0.035123, 0.999378, -0.0414605, 1.06867, 0.033281, -1.11914, -0.0400425, 0.0116164, 3.87344, -1.68511, -54.4218)
+mesh = SubResource("ArrayMesh_vyuie")
+skeleton = NodePath("")
+
+[node name="cuboid42" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
+transform = Transform3D(0.0128476, -0.0328255, 0.999379, -0.0370182, 0.99876, 0.033281, -0.999232, -0.0374229, 0.0116166, 3.64577, -2.07934, -55.2524)
+mesh = SubResource("ArrayMesh_b802r")
+skeleton = NodePath("")
+
+[node name="cuboid43" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
+transform = Transform3D(0.116078, 0.00620161, -0.994597, -0.0378632, 1.06938, 0.0023013, 1.11333, 0.0357222, 0.103777, 0.310883, -1.87443, -58.6391)
+mesh = SubResource("ArrayMesh_vyuie")
+skeleton = NodePath("")
+
+[node name="cuboid44" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
+transform = Transform3D(0.103641, 0.00579597, -0.994598, -0.0338063, 0.999426, 0.00230133, 0.99404, 0.0333852, 0.103777, 0.644998, -2.25844, -57.8403)
+mesh = SubResource("ArrayMesh_b802r")
+skeleton = NodePath("")
+
+[node name="cuboid31" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
+transform = Transform3D(0.0443428, 0.0234882, -0.99908, 0.00841242, 1.42476, 0.016793, 1.11909, -0.0116409, 0.0394613, 0.00727415, -1.37728, -44.6315)
+mesh = SubResource("ArrayMesh_vyuie")
+skeleton = NodePath("")
+
+[node name="cuboid32" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
+transform = Transform3D(0.039592, 0.016483, -0.99908, 0.00751106, 0.999831, 0.016793, 0.999188, -0.00816894, 0.0394614, 0.286922, -1.54374, -43.8055)
+mesh = SubResource("ArrayMesh_b802r")
+skeleton = NodePath("")
+
 [node name="cuboid9" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
 transform = Transform3D(0.0171035, 0, -0.999883, 0, 1.58, 0, 1.11987, 0, 0.015271, 4.65304, 0.396999, 7.80581)
 mesh = SubResource("ArrayMesh_vyuie")
@@ -2489,7 +2855,7 @@ mesh = SubResource("ArrayMesh_vyuie")
 skeleton = NodePath("")
 
 [node name="cuboid11" type="MeshInstance3D" parent="casas/blockbench_export10/Node"]
-transform = Transform3D(0.015271, 0, -0.999884, 0, 1, 0, 0.999884, 0, 0.015271, 4.90449, -0.23325, 8.57107)
+transform = Transform3D(0.015271, 0, -0.999884, 0, 1, 0, 0.999884, 0, 0.015271, 4.90449, -0.0767701, 8.57107)
 mesh = SubResource("ArrayMesh_b802r")
 skeleton = NodePath("")
 
@@ -2609,6 +2975,31 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, -0.25625)
 mesh = SubResource("ArrayMesh_aqok6")
 skeleton = NodePath("")
 
+[node name="cuboid7" type="MeshInstance3D" parent="casas/blockbench_export69/Node"]
+transform = Transform3D(-0.96365, -0.0412523, -0.0374535, -0.0359512, 1.10423, -0.00275874, 0.0362167, -0.0015023, -0.999295, 14.9673, 0.397463, -4.55835)
+mesh = SubResource("ArrayMesh_to7is")
+skeleton = NodePath("")
+
+[node name="cuboid9" type="MeshInstance3D" parent="casas/blockbench_export69/Node"]
+transform = Transform3D(-0.998601, -0.0373324, -0.0374535, -0.0372552, 0.999302, -0.00275874, 0.0375303, -0.00135955, -0.999295, 14.0637, 0.04181, -4.27355)
+mesh = SubResource("ArrayMesh_34huo")
+skeleton = NodePath("")
+
+[node name="cuboid10" type="MeshInstance3D" parent="casas/blockbench_export69/Node"]
+transform = Transform3D(-0.998601, -0.0373324, -0.0374535, -0.0372552, 0.999302, -0.00275874, 0.0375303, -0.00135955, -0.999295, 14.9624, 0.0753396, -4.30733)
+mesh = SubResource("ArrayMesh_66812")
+skeleton = NodePath("")
+
+[node name="cuboid11" type="MeshInstance3D" parent="casas/blockbench_export69/Node"]
+transform = Transform3D(-0.998601, -0.0373324, -0.0374535, -0.0372552, 0.999302, -0.00275874, 0.0375303, -0.00135955, -0.999295, 15.849, -0.266887, -4.37088)
+mesh = SubResource("ArrayMesh_p7hj1")
+skeleton = NodePath("")
+
+[node name="cuboid12" type="MeshInstance3D" parent="casas/blockbench_export69/Node"]
+transform = Transform3D(-0.998601, -0.0373324, -0.0374535, -0.0372552, 0.999302, -0.00275874, 0.0375303, -0.00135955, -0.999295, 15.7256, -0.27144, -4.32872)
+mesh = SubResource("ArrayMesh_aqok6")
+skeleton = NodePath("")
+
 [node name="cuboid6" type="MeshInstance3D" parent="casas/blockbench_export69/Node"]
 transform = Transform3D(0.0335283, -0.0388178, -0.998779, -0.000946754, 1.10432, -0.0351845, 0.964416, 0.0024336, 0.0346883, -4.26108, 1.06671, -19.4067)
 mesh = SubResource("ArrayMesh_to7is")
@@ -2634,8 +3025,28 @@ transform = Transform3D(1.31997, 0, 0.01318, 0, 2, 0, -0.00857026, 0, 2.02996, -
 mesh = SubResource("ArrayMesh_ywa5q")
 skeleton = NodePath("")
 
+[node name="cuboid67" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(-0.355842, 0, 1.50838, -0.0181898, 1.9998, -0.00589711, -1.28658, -0.0282734, -0.417107, -19.0909, 4.68657, 25.451)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
+[node name="cuboid68" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(-1.31708, 4.65356e-10, -0.13489, 0.00123995, 1.9998, -0.0286341, 0.0877025, -0.0282734, -2.02531, -16.736, 4.71144, 27.2104)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
 [node name="cuboid49" type="MeshInstance3D" parent="casas"]
 transform = Transform3D(2.12154, 0.0516474, 0.103212, -0.0548553, 1.99933, -0.00170909, -0.108053, -0.000943895, 2.02737, -32.4026, 4.71505, 35.3541)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
+[node name="cuboid69" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(-0.244895, 0.0287175, -1.53962, 0.0017596, 1.96979, 0.0228219, 1.34793, 0.00264607, -0.279751, -10.7625, 4.74321, 24.8233)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
+[node name="cuboid70" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(-1.52406, -0.0222867, -0.17725, -0.0154785, 1.99975, -0.0247497, 0.133784, -0.0225226, -2.0221, -13.2069, 4.72654, 26.9369)
 mesh = SubResource("ArrayMesh_ywa5q")
 skeleton = NodePath("")
 
@@ -2669,13 +3080,40 @@ transform = Transform3D(0.0194879, -0.00121069, -2.02991, -0.0548553, 1.99933, -
 mesh = SubResource("ArrayMesh_ywa5q")
 skeleton = NodePath("")
 
-[node name="cuboid41" type="MeshInstance3D" parent="casas"]
-transform = Transform3D(-1.2744, 0, -0.4662, 0, 2, 0, 0.397685, 0, -1.49395, -18.2902, 8.99345, -0.0470178)
+[node name="blockbench_export134" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(0.100956, 0.0218039, 1.99707, -0.0474169, 1.99929, -0.019186, -1.90174, -0.0486918, 0.106495, -1.23661, 0.954258, 53.173)
+
+[node name="blockbench_export135" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(0.0507273, 7.569, 0.93048, -0.0465405, 3.98577, -1.76894, -1.8187, 0.10912, 0.07122, -0.806276, 1.01786, 53.2227)
+
+[node name="blockbench_export136" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(0.0980275, 0.0219729, 1.99723, -0.0409147, 1.99944, -0.0197838, -1.90204, -0.0418774, 0.103359, -1.52071, 1.10189, 58.9289)
+
+[node name="blockbench_export137" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(0.102448, 7.76647, 0.832407, -0.0668473, 3.57663, -1.81559, -1.99625, 0.278806, 0.103517, -1.01908, 1.1712, 58.916)
+
+[node name="cuboid42" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(1.31924, 0, 0.239828, 0, 2, 0, -0.204581, 0, 1.54651, 1.13802, 3.53444, 40.5836)
 mesh = SubResource("ArrayMesh_ywa5q")
 skeleton = NodePath("")
 
-[node name="cuboid42" type="MeshInstance3D" parent="casas"]
-transform = Transform3D(1.23463, 0, -0.201591, 0, 2, 0, 0.160372, 0, 1.55196, -19.2791, 9.09701, -10.1058)
+[node name="cuboid79" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(-1.19727, 0, 0.429192, 0, 2, 0, -0.341434, 0, -1.505, 0.626511, 3.638, 50.6779)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
+[node name="cuboid80" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(0.065264, 0, 2.02752, 0, 2, 0, -1.31838, 0, 0.100368, -0.882199, 3.53444, 42.7191)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
+[node name="cuboid81" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(0.0107656, 0.00194602, 2.02997, -0.0548553, 1.99933, -0.00170909, -2.12426, -0.0516193, 0.0103319, -1.05035, 3.59548, 47.1803)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
+[node name="cuboid41" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(-1.2744, 0, -0.4662, 0, 2, 0, 0.397685, 0, -1.49395, -18.2902, 8.99345, -0.0470178)
 mesh = SubResource("ArrayMesh_ywa5q")
 skeleton = NodePath("")
 
@@ -2695,30 +3133,86 @@ mesh = SubResource("ArrayMesh_ywa5q")
 skeleton = NodePath("")
 
 [node name="blockbench_export61" parent="casas" instance=ExtResource("2_i3yqr")]
-transform = Transform3D(1.99644, -0.00940199, -0.118864, 0.00110827, 1.99515, -0.1392, 0.11923, 0.138886, 1.99161, -7.63841, 6.30314, 0.830521)
+transform = Transform3D(1.99644, -0.00940199, -0.118864, 0.00110827, 1.99515, -0.1392, 0.11923, 0.138886, 1.99161, -7.63841, 6.30314, 0.570617)
 
 [node name="blockbench_export62" parent="casas" instance=ExtResource("2_i3yqr")]
-transform = Transform3D(-2.16192, 0.5504, 0.0212846, -0.00453783, 1.69594, -1.97391, -0.115344, -10.383, -0.321287, -7.8173, 6.53277, 4.47756)
+transform = Transform3D(-2.00215, 0.5504, 0.0212846, -0.00106153, 2.00034, -1.96362, -0.106897, -10.3287, -0.379155, -8.05884, 6.40257, 4.21766)
+
+[node name="blockbench_export139" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(0.370216, -9.35777, 0.00351471, -0.0208485, -0.0560378, 1.99957, -0.982347, -3.52547, -0.0411128, 14.9184, 6.70138, 4.4555)
 
 [node name="blockbench_export63" parent="casas" instance=ExtResource("2_i3yqr")]
-transform = Transform3D(-2.16197, -0.552066, -0.0132785, -0.00287416, 1.58604, -1.9772, 0.114323, -10.4002, -0.300818, 13.3876, 6.67286, 5.07887)
+transform = Transform3D(-1.60464, -0.223297, -0.00377052, -0.00347919, 1.99723, -1.96373, 0.0339757, -10.3415, -0.379168, 15.3065, 6.49789, 5.01551)
 
 [node name="blockbench_export64" parent="casas" instance=ExtResource("2_i3yqr")]
-transform = Transform3D(-2.15308, 1.08885, 0.0341776, -0.000883842, 1.67824, -1.97446, -0.2268, -10.3433, -0.316765, -14.3045, 6.52485, 3.90146)
+transform = Transform3D(-2.15308, 1.08885, 0.0341776, 0.00503755, 1.9477, -1.96552, -0.226746, -10.296, -0.368205, -14.3045, 6.41146, 3.64156)
 
 [node name="blockbench_export65" parent="casas" instance=ExtResource("2_i3yqr")]
-transform = Transform3D(-2.15308, 1.08885, 0.0341776, -0.000883842, 1.67824, -1.97446, -0.2268, -10.3433, -0.316765, -20.3923, 6.53986, 3.24376)
+transform = Transform3D(-2.15308, 1.08885, 0.0341776, 0.00272222, 1.84248, -1.96917, -0.226785, -10.3153, -0.348117, -20.3923, 6.41537, 2.98386)
 
 [node name="blockbench_export66" parent="casas" instance=ExtResource("2_i3yqr")]
-transform = Transform3D(2.2591, 0, -0.23601, 0, 2, 0, 0.268462, 0, 1.98603, -14.3577, 6.30004, 0.237919)
+transform = Transform3D(2.2591, 0, -0.23601, 0, 2, 0, 0.268462, 0, 1.98603, -14.3577, 6.30004, -0.0219854)
 
 [node name="cuboid45" type="MeshInstance3D" parent="casas"]
-transform = Transform3D(2.54149, -0.0065361, 0.10631, 0.0119749, 1.99923, -0.0555087, -0.133001, 0.0551059, 2.02645, 13.4007, 6.40728, 1.37357)
+transform = Transform3D(1.66462, -0.00827337, 0.0422507, 0.00783428, 1.99923, -0.0555087, -0.0344522, 0.054872, 2.0288, 14.7476, 6.40728, 1.30683)
 mesh = SubResource("ArrayMesh_ywa5q")
 skeleton = NodePath("")
 
 [node name="cuboid35" type="MeshInstance3D" parent="casas"]
 transform = Transform3D(0.0286619, 0.0638065, 2.02882, -0.0123513, 1.99896, -0.0646446, -2.4198, -0.00944744, 0.0243609, -10.2156, 5.2405, -55.2)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
+[node name="cuboid83" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(0.442345, 0.122342, 1.8763, -0.00927806, 1.99604, -0.124957, -1.22027, 0.0291724, 0.681105, 11.6881, 6.40825, 3.10668)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
+[node name="blockbench_export121" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(0.0080819, -10.3009, -0.419212, 0.00236021, 2.20829, -1.95557, 1.68498, 0.0463142, 0.00474996, -33.7222, 3.72679, -6.98911)
+
+[node name="blockbench_export126" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(0.00641669, 10.3009, 0.419237, 0.00236021, 2.20829, -1.95557, -1.68499, 0.0423208, -0.00114269, -33.5748, 3.72679, -4.55922)
+
+[node name="blockbench_export123" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(0.0080819, -10.3009, -0.419212, 0.00236021, 2.20829, -1.95557, 1.68498, 0.0463142, 0.00474996, -33.7222, 3.72679, -2.71464)
+
+[node name="blockbench_export122" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(1.07949, 0.230073, 0.0291275, 0.00749407, 2.26161, -1.92879, -0.0321689, 8.24744, 0.528102, -32.1518, 3.73747, -9.53923)
+
+[node name="cuboid71" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(0.000619936, 0.0902884, 2.02793, -0.00802231, 1.99795, -0.0916402, -2.27499, -0.00702079, 0.000875765, -37.5201, 3.69686, -6.8718)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
+[node name="cuboid73" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(-0.0336935, 0.090128, 2.02753, -0.00595944, 1.99795, -0.0916401, -1.68965, -0.00884404, -0.0401079, -37.4668, 3.69686, -2.22507)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
+[node name="cuboid72" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(2.41973, -0.0133731, -0.0270594, 0.0151423, 1.99894, -0.0649563, 0.032758, 0.0638224, 2.02878, -34.0124, 3.72032, -10.1015)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
+[node name="blockbench_export124" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(0.00806044, -10.3202, -0.401686, 0.00243248, 2.11597, -1.95924, 1.68498, 0.0463142, 0.00474996, -27.3259, 5.86179, -6.71013)
+
+[node name="blockbench_export125" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(1.41435, 0.259027, 0.00441664, -0.00830034, 2.25848, -1.92901, -0.0421474, 8.24744, 0.528102, -25.2614, 5.84946, -9.26025)
+
+[node name="cuboid74" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(0.000619936, 0.0902884, 2.02793, -0.00802231, 1.99795, -0.0916402, -2.27499, -0.00702079, 0.000875765, -31.1596, 5.81983, -6.69587)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
+[node name="cuboid75" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(2.03917, -0.0142828, -0.0560196, 0.0127646, 1.99894, -0.0649563, 0.0567318, 0.063625, 2.02819, -28.3317, 5.82943, -9.79621)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
+[node name="cuboid76" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(1.51489, -0.0131803, -0.020933, 0.00947958, 1.99894, -0.0649563, 0.0159336, 0.0638625, 2.02885, -23.8725, 5.84102, -9.7383)
 mesh = SubResource("ArrayMesh_ywa5q")
 skeleton = NodePath("")
 
@@ -2729,7 +3223,7 @@ transform = Transform3D(1.99709, 0.101012, 0.0378583, -0.100993, 1.99745, -0.001
 transform = Transform3D(-2.1608, 0.0936151, -0.123231, 0.134574, 2.07084, -1.95704, 0.00739601, -10.329, -0.393479, -17.0782, 1.69312, 39.317)
 
 [node name="blockbench_export57" parent="casas" instance=ExtResource("2_i3yqr")]
-transform = Transform3D(-2.16131, -0.150677, -0.113005, 0.113162, 2.20419, -1.95294, 0.0558306, -10.3007, -0.416246, -11.1392, 1.33767, 39.2367)
+transform = Transform3D(-2.15982, -0.122608, -0.136166, 0.138036, 2.35892, -1.94504, 0.0575091, -10.2667, -0.445273, -11.1392, 1.27826, 39.2367)
 
 [node name="blockbench_export58" parent="casas" instance=ExtResource("2_i3yqr")]
 transform = Transform3D(-2.16154, 0.356198, -0.0905808, 0.109524, 1.86745, -1.96573, -0.054565, -10.3621, -0.357376, -23.579, 2.07138, 39.2825)
@@ -2738,7 +3232,7 @@ transform = Transform3D(-2.16154, 0.356198, -0.0905808, 0.109524, 1.86745, -1.96
 transform = Transform3D(2.02084, 0.101012, -0.0789416, -0.102194, 1.99745, 0.0039921, 0.0800306, 0, 1.99844, -23.0355, 1.87789, 35.5637)
 
 [node name="blockbench_export60" parent="casas" instance=ExtResource("2_i3yqr")]
-transform = Transform3D(0.0901694, -8.06597, -0.659095, -0.0101409, 2.82047, -1.88815, 1.81774, 0.41585, 0.022161, -7.90248, 1.13901, 39.4093)
+transform = Transform3D(-0.0719347, -8.04669, -0.674505, -0.0193973, 2.89068, -1.88225, 1.81848, -0.287473, -0.0467592, -7.93607, 1.03275, 39.4093)
 
 [node name="cuboid39" type="MeshInstance3D" parent="casas"]
 transform = Transform3D(2.41706, 0.0914991, 0.0371502, -0.108573, 1.99586, -0.0936403, -0.0493027, 0.0905022, 2.0275, -10.6781, 1.25137, 35.4141)
@@ -2778,7 +3272,7 @@ transform = Transform3D(0.108233, -0.0289797, -1.99686, -0.0430636, 1.99929, -0.
 transform = Transform3D(-0.0800416, 10.3688, 0.346012, 0.0411349, 1.83082, -1.9692, -2.16313, -0.34886, -0.0502506, -49.8702, 3.02802, 18.3839)
 
 [node name="blockbench_export80" parent="casas" instance=ExtResource("2_i3yqr")]
-transform = Transform3D(-0.192799, 10.3365, 0.342853, 0.0563153, 1.83669, -1.96868, -2.15566, -0.8765, -0.0820948, -49.4647, 2.89939, 24.3212)
+transform = Transform3D(-0.19196, 10.361, 0.315541, 0.0618783, 1.69445, -1.97313, -2.15558, -0.874031, -0.0847405, -49.4647, 2.91206, 24.5434)
 
 [node name="blockbench_export81" parent="casas" instance=ExtResource("2_i3yqr")]
 transform = Transform3D(-0.0214212, 10.3526, 0.370049, 0.0772219, 1.95175, -1.96408, -2.16351, -0.0328392, -0.0737676, -50.0655, 3.1866, 11.8807)
@@ -2791,8 +3285,83 @@ transform = Transform3D(0.190326, -0.00434459, -2.02371, -0.0804494, 1.99887, -0
 mesh = SubResource("ArrayMesh_ywa5q")
 skeleton = NodePath("")
 
+[node name="blockbench_export127" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(0.190696, 10.4525, 0.177274, -0.00440368, 0.939319, -1.99203, -2.15657, 0.922344, 0.0197432, -12.0386, 0.796952, 63.1058)
+
+[node name="blockbench_export128" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(-0.185126, 0.141023, -1.98641, 0.00388686, 1.995, 0.14127, 1.99141, 0.00921594, -0.184937, -8.43065, 0.314057, 63.3065)
+
+[node name="blockbench_export129" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(-0.0244681, 0.0673644, -1.99872, -0.04839, 1.99826, 0.0679415, 1.99926, 0.0491901, -0.022817, -8.15508, 0.63737, 50.7)
+
+[node name="blockbench_export130" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(0.0633288, 10.4475, 0.250457, 0.0450625, 1.31319, -1.98396, -2.16361, 0.333147, -0.0339903, -11.8072, 0.985913, 50.4854)
+
+[node name="blockbench_export131" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(-0.0476767, 10.4672, 0.222143, 0.071343, 1.17738, -1.98637, -2.1633, -0.191858, -0.0704041, -11.8104, 0.84994, 56.6578)
+
+[node name="blockbench_export132" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(0.123567, 10.4167, 0.276201, 0.0781912, 1.43477, -1.98005, -2.16005, 0.647832, -0.0558751, -11.5698, 1.154, 43.9838)
+
+[node name="blockbench_export133" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(-0.144265, 0.0656509, -1.99384, -0.0708944, 1.99752, 0.0707759, 2.01861, 0.0748457, -0.140009, -7.87789, 0.841947, 44.6432)
+
+[node name="cuboid78" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(0.0284605, 0.0904387, -2.02779, -0.0898099, 1.99662, 0.0908535, 2.41816, 0.0730893, 0.0272399, -8.08361, 0.44325, 56.9585)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
+[node name="blockbench_export138" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(0.299055, -10.3334, -0.274306, 0.0620578, 1.49998, -1.97879, 2.14335, 1.39836, 0.0955664, 2.41448, 0.360575, 65.2394)
+
+[node name="cuboid82" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(-0.309946, -0.0360279, 2.01295, -0.0801943, 1.99871, 0.0281655, -2.39873, -0.0621656, -0.26104, -1.33301, 0.0704747, 65.3707)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
+[node name="blockbench_export108" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(2.06502, -3.1529, -0.0513652, 0.0486315, 1.64689, -1.9749, 0.648501, 9.91625, 0.31166, -2.11888, 1.61236, 23.5922)
+
+[node name="blockbench_export109" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(0.0313832, -10.4323, -0.277086, -0.00193011, 1.45957, -1.98071, 2.16477, 0.152543, 0.00225108, 2.80009, 1.71957, 30.8326)
+
+[node name="blockbench_export110" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(0.894287, -8.85721, -0.229262, 0.016947, 1.48841, -1.97984, 1.43389, 5.50643, 0.166385, 2.31421, 1.71328, 25.8742)
+
+[node name="blockbench_export111" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(-1.90251, -0.04196, 0.615394, -0.0394388, 1.99956, 0.0144122, -0.61556, 0.00157454, -1.90291, -3.64113, 1.36103, 26.9688)
+
+[node name="blockbench_export112" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(-0.0200126, -0.04196, 1.99946, 0.00115485, 1.99956, 0.0419737, -1.9999, 0.00157454, -0.019984, -0.828945, 1.41687, 31.0038)
+
+[node name="blockbench_export113" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(-1.8871, -0.0399787, -0.107781, -0.0362668, 2.07661, -0.00341743, 0.0981192, -0.001344, -2.0742, -8.40672, 1.26011, 26.4734)
+
+[node name="blockbench_export114" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(-1.81367, -0.70788, -0.0200129, -0.0286431, 2.60675, -1.90463, 0.148964, -8.11737, -0.609894, -8.34242, 1.30079, 26.052)
+
+[node name="blockbench_export116" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(-1.11214, -0.424322, -0.0276367, 0.00145279, 1.54422, -1.39399, 0.0797413, -5.94612, -0.36005, -16.6637, 4.90261, 26.7091)
+
+[node name="blockbench_export119" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(-0.292339, 5.73605, 0.363171, -0.014117, 1.58877, -1.39113, -1.0759, -1.57942, -0.0804258, -18.7965, 4.88169, 25.2856)
+
+[node name="blockbench_export117" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(-1.1102, -0.566208, -0.0163899, -0.0145689, 1.60713, -1.38997, 0.102271, -5.91756, -0.375928, -13.1762, 4.92209, 26.3515)
+
+[node name="blockbench_export118" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(-0.201431, -5.85052, -0.36638, -0.000194968, 1.59319, -1.39097, 1.09665, -1.07433, -0.0675431, -11.1495, 4.93671, 24.6561)
+
+[node name="blockbench_export115" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(0.0969017, -10.4207, -0.279707, 0.0243309, 1.47999, -1.98004, 2.16269, 0.450264, 0.0348086, 2.99952, 1.75969, 37.5147)
+
+[node name="cuboid66" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(-0.114201, 0.00645626, 2.02773, -0.018445, 1.99993, -0.00729115, -2.41723, -0.0155657, -0.095743, -0.740251, 1.47726, 37.3692)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
 [node name="cuboid40" type="MeshInstance3D" parent="casas"]
-transform = Transform3D(0.0165603, 0.0374243, -2.02959, -0.0132045, 1.99962, 0.03791, 2.41991, 0.0106551, 0.0140963, -7.26846, 1.09709, 38.7688)
+transform = Transform3D(-0.0825946, 0.0369563, -2.02846, -0.059801, 1.99901, 0.0392337, 2.41785, 0.0507043, -0.0683223, -7.43261, 1.01804, 38.7688)
 mesh = SubResource("ArrayMesh_ywa5q")
 skeleton = NodePath("")
 
@@ -2860,6 +3429,9 @@ transform = Transform3D(1.81885, 0.861448, 0.0129775, -0.018751, 2.13782, -1.958
 
 [node name="blockbench_export85" parent="casas" instance=ExtResource("2_i3yqr")]
 transform = Transform3D(1.81885, 0.861448, 0.0129775, -0.018751, 2.13782, -1.95828, -0.148521, 10.2798, 0.406165, -24.5533, 2.8329, 23.9044)
+
+[node name="blockbench_export120" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(1.82032, 0.753293, 0.00760016, -0.0197359, 2.13741, -1.95828, -0.12918, 10.2884, 0.40628, -20.5918, 2.79226, 23.6709)
 
 [node name="blockbench_export86" parent="casas" instance=ExtResource("2_i3yqr")]
 transform = Transform3D(-1.99486, 0.0124267, -0.142783, 0.0123949, 1.99996, 0.000887175, 0.142786, 2.32776e-10, -1.99489, -27.7574, 2.79516, 27.7675)
@@ -2930,7 +3502,12 @@ mesh = SubResource("ArrayMesh_ywa5q")
 skeleton = NodePath("")
 
 [node name="cuboid58" type="MeshInstance3D" parent="casas"]
-transform = Transform3D(1.82306, 0.0273799, 1.04264, -0.0290514, 1.9998, -0.00774596, -1.09144, -0.00749657, 1.74176, -23.9137, 9.07622, -8.76889)
+transform = Transform3D(1.82324, 0.0108002, 1.04267, -0.0139368, 1.99996, 0.000898021, -1.09144, -0.00749657, 1.74176, -23.9137, 9.10797, -8.76889)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
+[node name="cuboid77" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(1.34214, -0.0118649, -0.218378, 0.0051374, 1.99959, -0.0405317, 0.145357, 0.0388815, 2.01781, -19.5219, 9.10797, -10.1078)
 mesh = SubResource("ArrayMesh_ywa5q")
 skeleton = NodePath("")
 
@@ -3075,12 +3652,12 @@ mesh = SubResource("ArrayMesh_qjxb8")
 skeleton = NodePath("")
 
 [node name="cuboid11" type="MeshInstance3D" parent="casas/blockbench_export97/Node"]
-transform = Transform3D(0.444025, 1.61811e-11, -0.896014, 1.6181e-11, 0.999999, 2.60774e-11, 0.896014, -2.60793e-11, 0.444025, 2.49737, 1.8581, 1.7157)
+transform = Transform3D(0.444025, 1.61811e-11, -0.896014, 1.6181e-11, 0.999999, 2.60774e-11, 0.896014, -2.60794e-11, 0.444025, 2.49021, 1.99323, 1.71556)
 mesh = SubResource("ArrayMesh_v2jw7")
 skeleton = NodePath("")
 
 [node name="cuboid12" type="MeshInstance3D" parent="casas/blockbench_export97/Node"]
-transform = Transform3D(0.444025, 1.6181e-11, -0.896013, 1.6181e-11, 0.999999, 2.60774e-11, 0.896013, -2.60798e-11, 0.444025, 1.91661, 1.85809, 0.530527)
+transform = Transform3D(0.444025, 1.6181e-11, -0.896013, 1.6181e-11, 0.999999, 2.60774e-11, 0.896013, -2.60798e-11, 0.444025, 1.90945, 1.99322, 0.53039)
 mesh = SubResource("ArrayMesh_qjxb8")
 skeleton = NodePath("")
 
@@ -3214,6 +3791,14 @@ transform = Transform3D(1, -0.000146974, 0.000454192, 0.000142749, 0.999957, 0.0
 mesh = SubResource("ArrayMesh_xp24t")
 skeleton = NodePath("")
 
+[node name="blockbench_export140" parent="casas" instance=ExtResource("2_i3yqr")]
+transform = Transform3D(0.623767, 8.04414, -0.00480749, 0.0345443, -0.213105, 1.99846, 0.843932, -5.93686, -0.0782491, -6.21975, 6.66757, 4.27576)
+
+[node name="cuboid84" type="MeshInstance3D" parent="casas"]
+transform = Transform3D(0.87359, -0.0468373, -1.59116, 0.000458084, 1.99915, -0.0583639, 1.14852, 0.0348283, 1.2103, -3.34725, 6.32031, 2.14914)
+mesh = SubResource("ArrayMesh_ywa5q")
+skeleton = NodePath("")
+
 [node name="terreno" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.35475, 0.32362, -88.3095)
 
@@ -3223,5 +3808,23 @@ mesh = SubResource("PlaneMesh_ggh45")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_6dex0")
 
-[node name="blockbench_export2" parent="terreno" instance=ExtResource("14_nlnyj")]
-transform = Transform3D(-5.42144, 0, -5.93037, 0, 8.035, 0, 5.93037, 0, -5.42144, 0.422945, 0.649702, 22.6037)
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="terreno"]
+transform = Transform3D(9.4799, -0.00113907, 0.0328488, 0, 7.02278, 0.243523, -0.0443424, -0.24352, 7.0227, 8.72046, 3.6332, 96.18)
+mesh = SubResource("PlaneMesh_ggh45")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_6dex0")
+
+[node name="blockbench_export3" parent="terreno" instance=ExtResource("16_dfhb3")]
+transform = Transform3D(6.36937, 0, 4.84057, 0, 8, 0, -4.84057, 0, 6.36937, 17.8285, 3.65111, 98.1007)
+
+[node name="blockbench_export4" parent="terreno" instance=ExtResource("16_dfhb3")]
+transform = Transform3D(-7.37209, 0, -3.10682, 0, 8, 0, 3.10682, 0, -7.37209, -0.36903, 3.65111, 98.1007)
+
+[node name="blockbench_export5" parent="terreno" instance=ExtResource("16_dfhb3")]
+transform = Transform3D(-4.62878, 0, -6.5249, 0, 8, 0, 6.5249, 0, -4.62878, 2.87759, 3.65111, 93.7819)
+
+[node name="blockbench_export2" parent="." instance=ExtResource("17_p0qe4")]
+transform = Transform3D(1.995, 0, 0, 0, 1.995, 0, 0, 0, 1.995, 4.27537, 3.73015, 1.26699)
+
+[node name="blockbench_export3" parent="." instance=ExtResource("16_dfhb3")]
+transform = Transform3D(7.63775, 0, 2.38007, 0, 8, 0, -2.38007, 0, 7.63775, 10.5724, 3.65111, 5.3269)

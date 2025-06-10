@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bejggehswxavf"
-path.s3tc="res://.godot/imported/arvore1_0.png-664926febefff5228e3727ace0396938.s3tc.ctex"
+uid="uid://dvt7e4l3nbd1n"
+path.s3tc="res://.godot/imported/flower1_0.png-bcd1ba353a61386470b96d3f9ec5540a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "1e021aded4ca3291c2b95f1ebdd84e7b"
+"md5": "579e1442c8aad561028954b061c4e6e0"
 }
 
 [deps]
 
-source_file="res://obj/objs/arvore1_0.png"
-dest_files=["res://.godot/imported/arvore1_0.png-664926febefff5228e3727ace0396938.s3tc.ctex"]
+source_file="res://obj/objs/flower1_0.png"
+dest_files=["res://.godot/imported/flower1_0.png-bcd1ba353a61386470b96d3f9ec5540a.s3tc.ctex"]
 
 [params]
 

@@ -13,14 +13,17 @@ func _process(delta: float) -> void:
 "
 
 [sub_resource type="Environment" id="Environment_37vwl"]
-background_mode = 1
 background_color = Color(0.0350491, 0.0724851, 0.109033, 1)
+fog_enabled = true
+fog_light_color = Color(0.249902, 0.386745, 0.548541, 1)
+fog_light_energy = 0.33
+volumetric_fog_enabled = true
 
 [node name="mundo" type="Node3D"]
 script = SubResource("GDScript_qbplh")
 
 [node name="player" parent="." instance=ExtResource("1_yufry")]
-transform = Transform3D(-0.998297, 0, -0.0583307, 0, 1, 0, 0.0583307, 0, -0.998297, -13.4214, 1.34863, -68.1847)
+transform = Transform3D(-0.993052, 0, -0.117676, 0, 1, 0, 0.117676, 0, -0.993052, 4.40287, 4.26523, -12.179)
 
 [node name="Camera3D" type="Camera3D" parent="player"]
 transform = Transform3D(1, 0, 0, 0, 0.970511, 0.241058, 0, -0.241058, 0.970511, 0, 2.21909, 5.15178)
@@ -29,7 +32,7 @@ transform = Transform3D(1, 0, 0, 0, 0.970511, 0.241058, 0, -0.241058, 0.970511, 
 environment = SubResource("Environment_37vwl")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.947289, 0.246008, -0.205243, 0, 0.64062, 0.767858, 0.320382, -0.727383, 0.606852, 1.50724, 16.1837, 4.67277)
+transform = Transform3D(0.947288, 0.246008, -0.205243, 0.265961, -0.246647, 0.931896, 0.178631, -0.937361, -0.299074, 1.50724, 23.2219, -27.6866)
 light_color = Color(0.425668, 0.533439, 0.578021, 1)
 shadow_enabled = true
 shadow_blur = 2.429
@@ -44,5 +47,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.12258, 8.19046, -25.7944)
 player = NodePath("../player")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-0.68941, 0.267711, -0.673086, 0.0399752, 0.941845, 0.333662, 0.723267, 0.203123, -0.660019, -19.3097, 5.40357, -78.7836)
+transform = Transform3D(-0.855685, 0.0141561, 0.517304, 0.00483807, 0.999801, -0.019357, -0.517475, -0.0140607, -0.855583, 13.2431, 7.2239, -15.9362)
 current = true
