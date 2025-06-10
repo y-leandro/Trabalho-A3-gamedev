@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyahkovjux4xl"
-path.s3tc="res://.godot/imported/placapare1_0.png-c2a61b5c252b20981c3836e26331ca65.s3tc.ctex"
+uid="uid://1x1kit8tgk03"
+path.s3tc="res://.godot/imported/portao_0.png-2eb285ad3ffb2576e390f39f4460cccf.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "1a44ead55d8abf0ee8822e03c7b0afb1"
+"md5": "bb8d7ca879808e54edb53798c1c0ec76"
 }
 
 [deps]
 
-source_file="res://obj/placapare1_0.png"
-dest_files=["res://.godot/imported/placapare1_0.png-c2a61b5c252b20981c3836e26331ca65.s3tc.ctex"]
+source_file="res://obj/objs/portao_0.png"
+dest_files=["res://.godot/imported/portao_0.png-2eb285ad3ffb2576e390f39f4460cccf.s3tc.ctex"]
 
 [params]
 

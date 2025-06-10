@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bpcvupgae0lec"
-path="res://.godot/imported/placapare1.gltf-f5720a6be4fc577c5be191b8cb2984a6.scn"
+uid="uid://dfaumkesoqg6w"
+path="res://.godot/imported/portao.gltf-c2ad6e67dc783acc338c19ff515ed3c3.scn"
 
 [deps]
 
-source_file="res://obj/placapare1.gltf"
-dest_files=["res://.godot/imported/placapare1.gltf-f5720a6be4fc577c5be191b8cb2984a6.scn"]
+source_file="res://obj/objs/portao.gltf"
+dest_files=["res://.godot/imported/portao.gltf-c2ad6e67dc783acc338c19ff515ed3c3.scn"]
 
 [params]
 

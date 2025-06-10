@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://cqb1twp436bhj"]
+[gd_scene load_steps=10 format=3 uid="uid://cqb1twp436bhj"]
 
 [ext_resource type="PackedScene" uid="uid://b7ghunxqy8hs6" path="res://scn/player.tscn" id="1_yufry"]
 [ext_resource type="PackedScene" uid="uid://b54whow5jf4ob" path="res://scn/mapa_1.tscn" id="3_ctbvs"]
-[ext_resource type="PackedScene" uid="uid://bpcvupgae0lec" path="res://obj/placapare1.gltf" id="3_u6fpa"]
+[ext_resource type="PackedScene" uid="uid://bpcvupgae0lec" path="res://obj/objs/placapare1.gltf" id="3_u6fpa"]
 [ext_resource type="PackedScene" uid="uid://d3obwb3mi24yf" path="res://scn/lobisomem.tscn" id="4_c6b1t"]
+[ext_resource type="Texture2D" uid="uid://bfgqxvk7damtn" path="res://ast/ceu1.png" id="5_bhwos"]
 
 [sub_resource type="GDScript" id="GDScript_qbplh"]
 script/source = "extends Node3D
@@ -13,17 +14,27 @@ func _process(delta: float) -> void:
 "
 
 [sub_resource type="Environment" id="Environment_37vwl"]
-background_color = Color(0.0350491, 0.0724851, 0.109033, 1)
-fog_enabled = true
-fog_light_color = Color(0.249902, 0.386745, 0.548541, 1)
+background_mode = 1
+background_color = Color(0.44544, 0.593464, 0.73979, 1)
+fog_light_color = Color(0.121945, 0.206724, 0.306681, 1)
 fog_light_energy = 0.33
-volumetric_fog_enabled = true
+volumetric_fog_density = 0.029
+volumetric_fog_albedo = Color(0.381703, 0.381703, 0.381703, 1)
+volumetric_fog_emission = Color(0.0846899, 0.0846899, 0.0846899, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cmfrt"]
+albedo_texture = ExtResource("5_bhwos")
+emission = Color(0.0768358, 0.0768358, 0.0768358, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_vj2ie"]
+material = SubResource("StandardMaterial3D_cmfrt")
+flip_faces = true
 
 [node name="mundo" type="Node3D"]
 script = SubResource("GDScript_qbplh")
 
 [node name="player" parent="." instance=ExtResource("1_yufry")]
-transform = Transform3D(-0.993052, 0, -0.117676, 0, 1, 0, 0.117676, 0, -0.993052, 4.40287, 4.26523, -12.179)
+transform = Transform3D(-0.993052, 0, -0.117676, 0, 1, 0, 0.117676, 0, -0.993052, 16.7869, 4.26523, -12.179)
 
 [node name="Camera3D" type="Camera3D" parent="player"]
 transform = Transform3D(1, 0, 0, 0, 0.970511, 0.241058, 0, -0.241058, 0.970511, 0, 2.21909, 5.15178)
@@ -33,7 +44,7 @@ environment = SubResource("Environment_37vwl")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.947288, 0.246008, -0.205243, 0.265961, -0.246647, 0.931896, 0.178631, -0.937361, -0.299074, 1.50724, 23.2219, -27.6866)
-light_color = Color(0.425668, 0.533439, 0.578021, 1)
+light_color = Color(0.163982, 0.221408, 0.31382, 1)
 shadow_enabled = true
 shadow_blur = 2.429
 
@@ -47,5 +58,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.12258, 8.19046, -25.7944)
 player = NodePath("../player")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-0.855685, 0.0141561, 0.517304, 0.00483807, 0.999801, -0.019357, -0.517475, -0.0140607, -0.855583, 13.2431, 7.2239, -15.9362)
+transform = Transform3D(-0.346365, -0.0164834, -0.937955, 0.00483807, 0.999801, -0.0193569, 0.938087, -0.0112425, -0.346217, 11.6553, 7.2239, -18.5627)
 current = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(135.77, 0, 0, 0, 146.105, 0, 0, 0, 198.06, -3.06046, 10.4568, -6.46128)
+mesh = SubResource("SphereMesh_vj2ie")
