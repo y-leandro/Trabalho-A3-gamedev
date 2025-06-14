@@ -19,8 +19,11 @@ func _process(delta: float) -> void:
 [sub_resource type="Environment" id="Environment_37vwl"]
 background_mode = 1
 background_color = Color(0.44544, 0.593464, 0.73979, 1)
-fog_light_color = Color(1, 1, 1, 1)
-volumetric_fog_density = 0.1365
+fog_light_color = Color(0.121945, 0.206724, 0.306681, 1)
+fog_light_energy = 0.33
+volumetric_fog_density = 0.029
+volumetric_fog_albedo = Color(0.381703, 0.381703, 0.381703, 1)
+volumetric_fog_emission = Color(0.0846899, 0.0846899, 0.0846899, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cmfrt"]
 albedo_texture = ExtResource("5_bhwos")
@@ -32,7 +35,7 @@ flip_faces = true
 
 [sub_resource type="Animation" id="Animation_rhbq2"]
 resource_name = "gira"
-length = 300.0
+length = 120.0
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -41,7 +44,7 @@ tracks/0/path = NodePath("ceu:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 150, 300),
+"times": PackedFloat32Array(0, 60, 120),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector3(0, 0, 0), Vector3(0, 3.14159, 0), Vector3(0, 6.28319, 0)]
@@ -72,7 +75,7 @@ _data = {
 script = SubResource("GDScript_qbplh")
 
 [node name="player" parent="." instance=ExtResource("1_yufry")]
-transform = Transform3D(-0.993052, 0, -0.117676, 0, 1, 0, 0.117676, 0, -0.993052, -28.3649, 2.63357, -13.234)
+transform = Transform3D(-0.993052, 0, -0.117676, 0, 1, 0, 0.117676, 0, -0.993052, 16.7869, 4.26523, -12.179)
 
 [node name="Camera3D" type="Camera3D" parent="player"]
 transform = Transform3D(1, 0, 0, 0, 0.970511, 0.241058, 0, -0.241058, 0.970511, 0, 2.21909, 5.15178)
@@ -96,7 +99,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.12258, 8.19046, -25.7944)
 player = NodePath("../player")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.252995, -0.280481, 0.925918, 0.0253549, 0.958647, 0.283467, -0.967135, -0.0482393, 0.249645, -22.5111, 7.34657, -10.7825)
+transform = Transform3D(-0.683446, -0.00788143, -0.729958, 0.00594431, 0.999848, -0.016361, 0.729977, -0.015521, -0.683296, -6.22525, 7.2239, -27.8946)
 current = true
 
 [node name="ceu" type="MeshInstance3D" parent="."]
