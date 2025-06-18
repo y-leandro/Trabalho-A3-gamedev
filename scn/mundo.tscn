@@ -1,10 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://cqb1twp436bhj"]
+[gd_scene load_steps=20 format=3 uid="uid://cqb1twp436bhj"]
 
 [ext_resource type="PackedScene" uid="uid://b7ghunxqy8hs6" path="res://scn/player.tscn" id="1_yufry"]
 [ext_resource type="PackedScene" uid="uid://b54whow5jf4ob" path="res://scn/mapa_1.tscn" id="3_ctbvs"]
-[ext_resource type="PackedScene" uid="uid://bpcvupgae0lec" path="res://obj/objs/placapare1.gltf" id="3_u6fpa"]
 [ext_resource type="PackedScene" uid="uid://d3obwb3mi24yf" path="res://scn/lobisomem.tscn" id="4_c6b1t"]
 [ext_resource type="Texture2D" uid="uid://bfgqxvk7damtn" path="res://ast/ceu1.png" id="5_bhwos"]
+[ext_resource type="PackedScene" uid="uid://c2ky3d1ylwrol" path="res://scn/auto_fixed_camera.tscn" id="6_o2nsu"]
 
 [sub_resource type="GDScript" id="GDScript_qbplh"]
 script/source = "extends Node3D
@@ -30,6 +30,21 @@ emission = Color(0.0768358, 0.0768358, 0.0768358, 1)
 material = SubResource("StandardMaterial3D_cmfrt")
 flip_faces = true
 
+[sub_resource type="Animation" id="Animation_mfiwn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ceu:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_rhbq2"]
 resource_name = "gira"
 length = 300.0
@@ -47,35 +62,38 @@ tracks/0/keys = {
 "values": [Vector3(0, 0, 0), Vector3(0, 3.14159, 0), Vector3(0, 6.28319, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_mfiwn"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ceu:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_okhkw"]
 _data = {
 "RESET": SubResource("Animation_mfiwn"),
 "gira": SubResource("Animation_rhbq2")
 }
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_nv2q6"]
+size = Vector3(7.32397, 4.70117, 16.0306)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5nnyb"]
+size = Vector3(7.73633, 3.88965, 16.2348)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_anu1f"]
+size = Vector3(17.9981, 3.22949, 30.1546)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0cuyi"]
+size = Vector3(6.42053, 4.36304, 21.3775)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jfug3"]
+size = Vector3(7.37787, 3.41125, 27.6807)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_igko1"]
+size = Vector3(18.655, 5.37793, 7.84418)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a3us0"]
+size = Vector3(8.72357, 4.94373, 45.3004)
+
 [node name="mundo" type="Node3D"]
 script = SubResource("GDScript_qbplh")
 
 [node name="player" parent="." instance=ExtResource("1_yufry")]
-transform = Transform3D(-0.993052, 0, -0.117676, 0, 1, 0, 0.117676, 0, -0.993052, -28.3649, 2.63357, -13.234)
-
-[node name="Camera3D" type="Camera3D" parent="player"]
-transform = Transform3D(1, 0, 0, 0, 0.970511, 0.241058, 0, -0.241058, 0.970511, 0, 2.21909, 5.15178)
+transform = Transform3D(-0.993052, 0, -0.117676, 0, 1, 0, 0.117676, 0, -0.993052, -12.8722, 1.57464, -70.4287)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_37vwl")
@@ -86,18 +104,11 @@ light_color = Color(0.163982, 0.221408, 0.31382, 1)
 shadow_enabled = true
 shadow_blur = 2.429
 
-[node name="blockbench_export" parent="." instance=ExtResource("3_u6fpa")]
-transform = Transform3D(4.9347, 0, -0.805436, 0, 5, 0, 0.805436, 0, 4.9347, -7.88994, -3.24311, 63.769)
-
 [node name="mapa1" parent="." instance=ExtResource("3_ctbvs")]
 
 [node name="Lobisomem" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_c6b1t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.12258, 8.19046, -25.7944)
 player = NodePath("../player")
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.252995, -0.280481, 0.925918, 0.0253549, 0.958647, 0.283467, -0.967135, -0.0482393, 0.249645, -22.5111, 7.34657, -10.7825)
-current = true
 
 [node name="ceu" type="MeshInstance3D" parent="."]
 transform = Transform3D(200, 0, 0, 0, 200, 0, 0, 0, 200, -3.06046, 10.4568, -6.46128)
@@ -107,3 +118,138 @@ mesh = SubResource("SphereMesh_vj2ie")
 libraries = {
 "": SubResource("AnimationLibrary_okhkw")
 }
+
+[node name="cameras" type="Node3D" parent="."]
+
+[node name="AutoFixedCamera" parent="cameras" instance=ExtResource("6_o2nsu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9063, 2.82169, -60.4827)
+
+[node name="Camera3D" type="Camera3D" parent="cameras/AutoFixedCamera"]
+transform = Transform3D(-0.991669, 0, -0.128813, -0.00892049, 0.997599, 0.0686746, 0.128504, 0.0692516, -0.989288, -0.721426, 0, -11.1884)
+current = true
+
+[node name="Area3D" type="Area3D" parent="cameras/AutoFixedCamera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.546587, -4.59043)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cameras/AutoFixedCamera/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.09567)
+shape = SubResource("BoxShape3D_nv2q6")
+
+[node name="AutoFixedCamera2" parent="cameras" instance=ExtResource("6_o2nsu")]
+transform = Transform3D(0.0103321, 0, 0.999947, 0, 1, 0, -0.999947, 0, 0.0103321, -5.5813, 4.39877, -47.8688)
+ashely_look_at_me = true
+
+[node name="Camera3D" type="Camera3D" parent="cameras/AutoFixedCamera2"]
+transform = Transform3D(-0.991669, 4.5402e-09, -0.128813, -0.00892049, 0.997599, 0.0686747, 0.128504, 0.0692516, -0.989288, -3.08288, 3.1634, -9.95967)
+current = true
+
+[node name="Area3D" type="Area3D" parent="cameras/AutoFixedCamera2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.546587, -4.59043)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cameras/AutoFixedCamera2/Area3D"]
+transform = Transform3D(1.00008, 0, -3.12924e-07, 0, 1, 0, 3.12924e-07, 0, 1.00008, -5.34058e-05, -0.776855, 2.2602)
+shape = SubResource("BoxShape3D_5nnyb")
+
+[node name="AutoFixedCamera3" parent="cameras" instance=ExtResource("6_o2nsu")]
+transform = Transform3D(0.999999, 0, -0.00150096, 0, 1, 0, 0.00150096, 0, 0.999999, 16.2583, 5.92527, -18.626)
+ashely_look_at_me = true
+
+[node name="Camera3D" type="Camera3D" parent="cameras/AutoFixedCamera3"]
+transform = Transform3D(-0.991669, -7.35599e-09, -0.128813, -0.00892049, 0.997599, 0.0686747, 0.128503, 0.0692516, -0.989288, -15.6175, 3.1634, 3.6414)
+current = true
+
+[node name="Area3D" type="Area3D" parent="cameras/AutoFixedCamera3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.546587, -4.59043)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cameras/AutoFixedCamera3/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.73247, -1.11475, 8.68042)
+shape = SubResource("BoxShape3D_anu1f")
+
+[node name="AutoFixedCamera5" parent="cameras" instance=ExtResource("6_o2nsu")]
+transform = Transform3D(0.999999, 0, -0.00150096, 0, 1, 0, 0.00150096, 0, 0.999999, -8.3886, 5.92527, -15.0861)
+ashely_look_at_me = true
+
+[node name="Camera3D" type="Camera3D" parent="cameras/AutoFixedCamera5"]
+transform = Transform3D(-0.991669, -4.59841e-09, -0.128813, -0.00892049, 0.997599, 0.0686747, 0.128503, 0.0692516, -0.989288, 16.608, 3.1634, 0.13038)
+current = true
+
+[node name="Area3D" type="Area3D" parent="cameras/AutoFixedCamera5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.546587, -4.59043)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cameras/AutoFixedCamera5/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.233321, -1.11475, 4.3789)
+shape = SubResource("BoxShape3D_anu1f")
+
+[node name="AutoFixedCamera4" parent="cameras" instance=ExtResource("6_o2nsu")]
+transform = Transform3D(0.999999, 0, -0.00150096, 0, 1, 0, 0.00150096, 0, 0.999999, 4.77036, 4.5707, -20.0971)
+
+[node name="Camera3D" type="Camera3D" parent="cameras/AutoFixedCamera4"]
+transform = Transform3D(0.998202, 0.0119849, -0.0587269, 0.000307659, 0.978767, 0.204974, 0.0599366, -0.204624, 0.977004, 0.0425334, 2.21642, -5.40728)
+current = true
+
+[node name="Area3D" type="Area3D" parent="cameras/AutoFixedCamera4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.546587, -4.59043)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cameras/AutoFixedCamera4/Area3D"]
+transform = Transform3D(0.999731, 0, -0.0232108, 0, 1, 0, 0.0232108, 0, 0.999731, 0.247208, 0.609985, -16.1826)
+shape = SubResource("BoxShape3D_0cuyi")
+
+[node name="AutoFixedCamera6" parent="cameras" instance=ExtResource("6_o2nsu")]
+transform = Transform3D(0.999999, 0, -0.00150096, 0, 1, 0, 0.00150096, 0, 0.999999, 4.77036, 4.5707, 2.65586)
+ashely_look_at_me = true
+
+[node name="Camera3D" type="Camera3D" parent="cameras/AutoFixedCamera6"]
+transform = Transform3D(-0.999428, -0.00663148, 0.0331659, 0.000307658, 0.978767, 0.204974, -0.033821, 0.204867, -0.978205, -0.00536394, 4.26901, -37.3184)
+current = true
+
+[node name="Area3D" type="Area3D" parent="cameras/AutoFixedCamera6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.546587, -4.59043)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cameras/AutoFixedCamera6/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0443563, 0.334177, -11.9049)
+shape = SubResource("BoxShape3D_jfug3")
+
+[node name="AutoFixedCamera7" parent="cameras" instance=ExtResource("6_o2nsu")]
+transform = Transform3D(0.999999, 0, -0.00150096, 0, 1, 0, 0.00150096, 0, 0.999999, -33.7699, 4.5707, -7.81027)
+ashely_look_at_me = true
+
+[node name="Camera3D" type="Camera3D" parent="cameras/AutoFixedCamera7"]
+transform = Transform3D(0.0863414, -0.204235, 0.975107, 0.000307649, 0.978767, 0.204974, -0.996265, -0.0173978, 0.084571, 17.4954, 4.26901, -3.75102)
+current = true
+
+[node name="Area3D" type="Area3D" parent="cameras/AutoFixedCamera7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.546587, -4.59043)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cameras/AutoFixedCamera7/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.12265, -2.18896, -1.93998)
+shape = SubResource("BoxShape3D_igko1")
+
+[node name="AutoFixedCamera8" parent="cameras" instance=ExtResource("6_o2nsu")]
+transform = Transform3D(0.999999, 0, -0.00150096, 0, 1, 0, 0.00150096, 0, 0.999999, -55.3709, 4.5707, 32.8484)
+ashely_look_at_me = true
+
+[node name="Camera3D" type="Camera3D" parent="cameras/AutoFixedCamera8"]
+transform = Transform3D(0.0863413, -0.204235, 0.975107, 0.000307649, 0.978767, 0.204974, -0.996265, -0.0173977, 0.0845709, 11.0213, -1.60868, 0.69202)
+current = true
+
+[node name="Area3D" type="Area3D" parent="cameras/AutoFixedCamera8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0429, 0.546587, -4.61001)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cameras/AutoFixedCamera8/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.31089, -3.13723, -15.2274)
+shape = SubResource("BoxShape3D_a3us0")
+
+[node name="AutoFixedCamera9" parent="cameras" instance=ExtResource("6_o2nsu")]
+transform = Transform3D(0.999999, 0, -0.00150096, 0, 1, 0, 0.00150096, 0, 0.999999, -13.424, 4.5707, 32.8484)
+ashely_look_at_me = true
+
+[node name="Camera3D" type="Camera3D" parent="cameras/AutoFixedCamera9"]
+transform = Transform3D(0.0863412, -0.204235, 0.975107, 0.000307649, 0.978767, 0.204974, -0.996265, -0.0173977, 0.0845708, 12.4387, -1.62087, -4.53829)
+current = true
+
+[node name="Area3D" type="Area3D" parent="cameras/AutoFixedCamera9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0429, 0.546587, -4.61001)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cameras/AutoFixedCamera9/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.56409, -5.55799, 17.8458)
+shape = SubResource("BoxShape3D_a3us0")
