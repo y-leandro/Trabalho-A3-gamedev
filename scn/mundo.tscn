@@ -107,7 +107,7 @@ shadow_blur = 2.429
 [node name="mapa1" parent="." instance=ExtResource("3_ctbvs")]
 
 [node name="Lobisomem" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_c6b1t")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.12258, 8.19046, -25.7944)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.12258, 6.00571, -21.8929)
 player = NodePath("../player")
 
 [node name="ceu" type="MeshInstance3D" parent="."]

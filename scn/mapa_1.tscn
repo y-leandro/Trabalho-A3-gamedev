@@ -1,4 +1,4 @@
-[gd_scene load_steps=191 format=4 uid="uid://b54whow5jf4ob"]
+[gd_scene load_steps=192 format=4 uid="uid://b54whow5jf4ob"]
 
 [ext_resource type="Texture2D" uid="uid://bd4jfiw2bht2k" path="res://ast/chaocentro.png" id="1_queat"]
 [ext_resource type="PackedScene" uid="uid://dtlxa7qspvobb" path="res://obj/casas/casaflo2.gltf" id="2_1t33e"]
@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://bsvgg2uls5dm2" path="res://obj/objs/PORTAesgoto_0.png" id="21_qfc8t"]
 [ext_resource type="Texture2D" uid="uid://yqrdrw0itmwg" path="res://obj/objs/PORTAesgoto_1.png" id="22_sqrui"]
 [ext_resource type="Texture2D" uid="uid://giaugj5cq1q7" path="res://obj/objs/PORTAesgoto_2.png" id="23_d6pj3"]
+[ext_resource type="AudioStream" uid="uid://dusnb7lx1j6pb" path="res://ast/som de grilo.mp3" id="24_pyhtu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_svxw5"]
 resource_name = "material_0"
@@ -6081,3 +6082,47 @@ shape = SubResource("BoxShape3D_mxmae")
 [node name="CollisionShape3D26" type="CollisionShape3D" parent="colisoes/StaticBody3D"]
 transform = Transform3D(-0.808257, 0, 0.58883, 0, 1, 0, -0.58883, 0, -0.808257, -3.2829, -0.4561, 69.3073)
 shape = SubResource("BoxShape3D_mxmae")
+
+[node name="audios" type="Node3D" parent="."]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="audios"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.7606, 3.05002, -83.43)
+stream = ExtResource("24_pyhtu")
+autoplay = true
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="audios"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.3954, 5.81165, -36.7643)
+stream = ExtResource("24_pyhtu")
+autoplay = true
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D3" type="AudioStreamPlayer3D" parent="audios"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.0458, 5.81165, -40.693)
+stream = ExtResource("24_pyhtu")
+autoplay = true
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D4" type="AudioStreamPlayer3D" parent="audios"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.91933, 5.81165, 9.92372)
+stream = ExtResource("24_pyhtu")
+autoplay = true
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D5" type="AudioStreamPlayer3D" parent="audios"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51.9622, 1.99495, 39.4649)
+stream = ExtResource("24_pyhtu")
+autoplay = true
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D6" type="AudioStreamPlayer3D" parent="audios"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.82174, 1.99495, 23.208)
+stream = ExtResource("24_pyhtu")
+autoplay = true
+parameters/looping = true
+
+[node name="AudioStreamPlayer3D7" type="AudioStreamPlayer3D" parent="audios"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.1374, 5.08453, 8.12817)
+stream = ExtResource("24_pyhtu")
+autoplay = true
+parameters/looping = true
